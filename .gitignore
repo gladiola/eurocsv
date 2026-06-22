@@ -1,0 +1,48 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+!**/packages/repositories.config
+*.nuget.props
+*.nuget.targets
+
+# dotnet publish output
+publish/
+out/
+
+# Rider / ReSharper
+.idea/
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# User secrets / local appsettings overrides
+appsettings.*.json
+!appsettings.Development.json
+!appsettings.json
+
+# Temp session files created by TempFileService
+/tmp/eurocsv_sessions/
+
+# Test results
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+# Logs
+*.log
+logs/

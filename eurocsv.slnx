@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="eurocsv.Tests/eurocsv.Tests.csproj" />
+  <Project Path="eurocsv/eurocsv.csproj" />
+</Solution>
