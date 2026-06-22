@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Koti</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Muunna CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Tietosuoja</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Kieli</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Muunna CSV-tiedostoja kansainvälisten muotoilukonventioiden välillä sekunneissa.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Muunna CSV-tiedosto</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Lataa</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Lataa CSV-tiedostosi (enintään 50 Mt). Tiedostosi käsitellään muistissa eikä sitä koskaan tallenneta pysyvästi.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Määritä</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Valitse lähde- ja kohdealue. Hienosäädä erottimet, desimaalierotin ja muut.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Lataa</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Lataa muunnettu tiedostosi. Aloita tiedoston poistaminen milloin tahansa — emme säilytä tietojasi koskaan.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Tuetut aluekohtaiset käytännöt</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Alue</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Erotin</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Desimaali</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Tuhat</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Päivämäärämuoto</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Muunna CSV-tiedosto</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Muunnos valmis</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Alkuperäinen tiedosto</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Lähdealue</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Kohdealue</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Muunnetun tiedoston koko</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Lataa alkuperäinen</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Lataa muunnettu tiedosto</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Poista tiedostoni nyt</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Lataa ja muunna</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV-tiedosto</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Enimmäiskoko: 50 Mt. Hyväksytyt muodot: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Lähdealue (Mistä)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Kohdealue (Mihin)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Muunnosvaihtoehdot</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Muunna kenttäerotin</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Muunna desimaaliero</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Muunna tuhaterotin</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Kunnioita lainattuja kenttiä</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Muunna rivinpäätteet</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Tulosteen rivinpäätteet</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Mukautettu ohitus (jätä tyhjäksi alueen esiasetuksen käyttämiseksi)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Lähdeerotin</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Kohdeerotin</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Lähdedesimaali</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Kohdedesimaali</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Lähdetuhat</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Kohdetuhat</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Muunna nyt</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Miten se toimii</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Ilmainen CSV-muunnin</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Tietosuojakäytäntö</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Vaihda navigaatiota</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Tiedostosi tallennetaan väliaikaisesti palvelimelle. Napsauta alla olevaa painiketta poistaaksesi ne välittömästi, tai ne poistetaan automaattisesti 2 tunnin kuluessa.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Poistetaanko väliaikaiset tiedostot nyt? Et voi enää ladata niitä.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Erotin&lt;/strong&gt; — Kenttien erotinmerkki. Eurooppalaiset CSV-tiedostot käyttävät yleensä &lt;code&gt;;&lt;/code&gt;, englantilaiset &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Desimaalierotin&lt;/strong&gt; — Desimaalimerkki. Saksa: &lt;code&gt;1.234,56&lt;/code&gt; → Englanti: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tuhaterotinmerkki&lt;/strong&gt; — Ota käyttöön vain jos tiedosto sisältää muotoiltuja lukuja.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Lainausmerkkikentät&lt;/strong&gt; — Lainausmerkeissä olevat kentät on suojattu korvauksilta.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Tietosuoja&lt;/strong&gt; — Tiedostot käsitellään palvelimella ja tallennetaan väliaikaisesti. Käytä painiketta &lt;em&gt;Poista tiedostoni&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

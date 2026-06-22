@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Pagrindinis</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Konvertuoti CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Privatumas</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Kalba</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Konvertuokite CSV failus tarp tarptautinių formatavimo konvencijų per kelias sekundes.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Konvertuoti CSV failą</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Įkelti</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Įkelkite CSV failą (iki 50 MB). Failas apdorojamas atmintyje ir niekada nesaugomas nuolat.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Konfigūruoti</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Pasirinkite šaltinio ir paskirties lokalę. Pritaikykite skyriklius, dešimtainius skyriklius ir kita.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Atsisiųsti</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Atsisiųskite konvertuotą failą. Bet kada inicijuokite failo ištrynimą — niekada nesaugome jūsų duomenų.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Palaikomos regioninės konvencijos</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Lokalė</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Skyriklis</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Dešimtainis</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Tūkstančiai</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Datos formatas</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Konvertuoti CSV failą</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Konvertavimas baigtas</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Originalus failas</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Šaltinio lokalė</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Paskirties lokalė</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Konvertuoto failo dydis</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Atsisiųsti originalą</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Atsisiųsti konvertuotą failą</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Ištrinti mano failus dabar</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Įkelti ir konvertuoti</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV failas</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Maks. dydis: 50 MB. Priimami formatai: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Šaltinio lokalė (Iš)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Paskirties lokalė (Į)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Transformacijos parinktys</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Konvertuoti lauko skyiklį</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Konvertuoti dešimtainį skyriklį</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Konvertuoti tūkstančių skyriklį</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Atsižvelgti į laukelius kabutėse</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Konvertuoti eilučių pabaigą</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Išvesties eilučių pabaiga</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Pasirinktinis pakeitimas (palikite tuščią naudoti lokalės nustatymą)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Šaltinio skyriklis</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Paskirties skyriklis</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Šaltinio dešimtainis</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Paskirties dešimtainis</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Šaltinio tūkstančiai</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Paskirties tūkstančiai</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Konvertuoti dabar</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Kaip tai veikia</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Nemokamas CSV konverteris</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Privatumo politika</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Perjungti naršymą</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Jūsų failai laikinai saugomi serveryje. Spustelėkite žemiau esantį mygtuką, kad juos ištrintumėte nedelsiant, arba jie bus automatiškai pašalinti per 2 valandas.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Ištrinti laikinus failus dabar? Jų daugiau nebegalėsite atsisiųsti.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Skirtukas&lt;/strong&gt; — Laukų skyrimo simbolis. Europos CSV failai paprastai naudoja &lt;code&gt;;&lt;/code&gt;, angliški — &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Dešimtainis skirtukas&lt;/strong&gt; — Dešimtainių skaičių simbolis. Vokiečių k.: &lt;code&gt;1.234,56&lt;/code&gt; → Anglų k.: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tūkstančių skirtukas&lt;/strong&gt; — Įjunkite tik jei faile yra formatuotų skaičių.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Kabutėmis pažymėti laukai&lt;/strong&gt; — Kabutėmis pažymėti laukai apsaugoti nuo pakeitimų.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privatumas&lt;/strong&gt; — Failai apdorojami serveryje ir laikinai saugomi. Naudokite mygtuką &lt;em&gt;Ištrinti mano failus&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

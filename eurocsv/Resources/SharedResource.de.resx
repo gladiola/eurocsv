@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>CSV konvertieren</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Datenschutz</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>CSV-Dateien zwischen internationalen Formatierungskonventionen in Sekunden konvertieren.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 CSV-Datei konvertieren</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Hochladen</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Laden Sie Ihre CSV-Datei hoch (bis zu 50 MB). Ihre Datei wird im Speicher verarbeitet und nie dauerhaft gespeichert.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Konfigurieren</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Wählen Sie Quell- und Zielgebietsschema. Passen Sie Trennzeichen, Dezimaltrennzeichen und mehr an.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Herunterladen</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Laden Sie Ihre konvertierte Datei herunter. Initiieren Sie die Dateilöschung jederzeit – wir behalten Ihre Daten nie.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Unterstützte Gebietsschemakonventionen</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Gebietsschema</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Trennzeichen</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Dezimal</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Tausender</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Datumsformat</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 CSV-Datei konvertieren</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Konvertierung abgeschlossen</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Originaldatei</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Quellgebietsschema</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Zielgebietsschema</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Konvertierte Dateigröße</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Original herunterladen</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Konvertierte Datei herunterladen</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Meine Dateien jetzt löschen</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Hochladen &amp; Konvertieren</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV-Datei</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Maximale Dateigröße: 50 MB. Akzeptierte Formate: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Quellgebietsschema (Von)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Zielgebietsschema (Nach)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Konvertierungsoptionen</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Feldtrennzeichen konvertieren</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Dezimaltrennzeichen konvertieren</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Tausendertrennzeichen konvertieren</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Anführungsfelder beachten</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Zeilenenden konvertieren</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Ausgabe-Zeilenenden</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Benutzerdefinierte Überschreibung (leer lassen für Gebietsschema-Voreinstellung)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Von Trennzeichen</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Nach Trennzeichen</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Von Dezimal</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Nach Dezimal</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Von Tausender</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Nach Tausender</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Jetzt konvertieren</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ So funktioniert's</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Kostenloser CSV-Lokalisierungskonverter</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Datenschutz</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Navigation ein-/ausblenden</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Ihre Dateien werden vorübergehend auf dem Server gespeichert. Klicken Sie auf die Schaltfläche unten, um sie sofort zu löschen, oder sie werden innerhalb von 2 Stunden automatisch entfernt.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Temporäre Dateien jetzt löschen? Der Download wird danach nicht mehr möglich sein.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Trennzeichen&lt;/strong&gt; — Das Zeichen zur Feldtrennung. Deutsche/europäische CSV-Dateien verwenden meist &lt;code&gt;;&lt;/code&gt;, englische &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Dezimaltrennzeichen&lt;/strong&gt; — Das Zeichen für Dezimalstellen. Deutsch: &lt;code&gt;1.234,56&lt;/code&gt; → Englisch: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tausendertrennzeichen&lt;/strong&gt; — Nur aktivieren, wenn die Datei formatierte Zahlen enthält.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Felder in Anführungszeichen&lt;/strong&gt; — Anführungszeichen schützen Felder vor Ersetzungen.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Datenschutz&lt;/strong&gt; — Dateien werden serverseitig verarbeitet und vorübergehend gespeichert. Verwenden Sie die Schaltfläche &lt;em&gt;Dateien löschen&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Főoldal</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>CSV konvertálása</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Adatvédelem</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Nyelv</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Konvertálja a CSV fájlokat különböző nemzetközi formázási konvenciók között másodpercek alatt.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 CSV fájl konvertálása</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Feltöltés</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Töltse fel CSV fájlját (legfeljebb 50 MB). A fájlt a memóriában dolgozzuk fel, és soha nem tároljuk állandóan.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Beállítás</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Válassza ki a forrás és cél területi beállítást. Finomítsa az elválasztókat, tizedes elválasztókat és egyebeket.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Letöltés</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Töltse le a konvertált fájlt. Kezdeményezze a fájl törlését bármikor — soha nem tartjuk meg az adatait.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Támogatott területi beállítások</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Területi beállítás</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Elválasztó</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Tizedes</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Ezres</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Dátumformátum</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 CSV fájl konvertálása</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Konvertálás kész</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Eredeti fájl</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Forrás területi beállítás</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Cél területi beállítás</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Konvertált fájlméret</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Eredeti letöltése</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Konvertált fájl letöltése</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Fájljaim törlése most</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Feltöltés és konvertálás</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV fájl</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Max. fájlméret: 50 MB. Elfogadott formátumok: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Forrás területi beállítás (Forrás)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Cél területi beállítás (Cél)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Átalakítási lehetőségek</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Mezőelválasztó konvertálása</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Tizedes elválasztó konvertálása</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Ezres elválasztó konvertálása</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Idézett mezők tiszteletben tartása</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Soremelések konvertálása</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Kimeneti soremelések</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Egyéni felülírás (hagyja üresen a területi előbeállítás használatához)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Forrás elválasztó</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Cél elválasztó</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Forrás tizedes</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Cél tizedes</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Forrás ezres</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Cél ezres</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Konvertálás most</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Hogyan működik</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Ingyenes CSV-konverter</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Adatvédelmi irányelvek</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Navigáció váltása</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>A fájlok ideiglenesen a szerveren tárolódnak. Kattintson az alábbi gombra az azonnali törléshez, vagy 2 órán belül automatikusan törlődnek.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Törli az ideiglenes fájlokat most? Ezután nem tudja letölteni őket.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Elválasztó&lt;/strong&gt; — A mezőket elválasztó karakter. Az európai CSV-fájlok általában &lt;code&gt;;&lt;/code&gt;-t, az angolok &lt;code&gt;,&lt;/code&gt;-t használnak.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tizedes elválasztó&lt;/strong&gt; — A tizedes jel. Német: &lt;code&gt;1.234,56&lt;/code&gt; → Angol: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ezres elválasztó&lt;/strong&gt; — Csak akkor engedélyezze, ha a fájl formázott számokat tartalmaz.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Idézett mezők&lt;/strong&gt; — Az idézőjeles mezők védve vannak a helyettesítésektől.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Adatvédelem&lt;/strong&gt; — A fájlok szerveren kerülnek feldolgozásra és ideiglenesen tárolódnak. Használja a &lt;em&gt;Saját fájlok törlése&lt;/em&gt; gombot.&lt;/p&gt;</value>
+  </data>
+</root>

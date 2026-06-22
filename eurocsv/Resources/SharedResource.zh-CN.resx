@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>主页</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>转换 CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>隐私</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>语言</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>在几秒钟内将 CSV 文件在国际格式约定之间转换。</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 转换 CSV 文件</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 上传</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>上传您的 CSV 文件（最大 50 MB）。您的文件在内存中处理，绝不会永久存储。</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ 配置</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>选择源和目标区域设置约定。微调分隔符、小数点等。</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 下载</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>下载您的转换文件。随时启动文件删除 — 我们绝不保留您的数据。</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>支持的区域设置约定</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>区域设置</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>分隔符</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>小数点</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>千位</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>日期格式</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 转换 CSV 文件</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ 转换完成</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>原始文件</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>源区域设置</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>目标区域设置</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>转换后文件大小</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 下载原始文件</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 下载转换后的文件</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ 立即删除我的文件</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>上传并转换</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV 文件</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>最大文件大小：50 MB。接受的格式：.csv、.txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>源区域设置（从）</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>目标区域设置（到）</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ 转换选项</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>转换字段分隔符</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>转换小数点分隔符</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>转换千位分隔符</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>遵守引号字段</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>转换行尾</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>输出行尾</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF（Windows）</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF（Unix/Mac）</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>自定义覆盖（留空以使用区域设置预设）</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>源分隔符</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>目标分隔符</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>源小数点</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>目标小数点</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>源千位</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>目标千位</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 立即转换</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ 工作原理</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — 免费 CSV 转换器</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>切换导航</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>您的文件临时存储在服务器上。单击下面的按钮立即删除，或将在2小时内自动删除。</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>现在删除临时文件？您将无法再下载它们。</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;分隔符&lt;/strong&gt; — 用于分隔字段的字符。欧洲CSV通常使用 &lt;code&gt;;&lt;/code&gt;，英文CSV使用 &lt;code&gt;,&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;小数分隔符&lt;/strong&gt; — 小数点字符。德语：&lt;code&gt;1.234,56&lt;/code&gt; → 英语：&lt;code&gt;1,234.56&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;千位分隔符&lt;/strong&gt; — 仅当文件包含格式化数字时才启用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;带引号的字段&lt;/strong&gt; — 带引号的字段受保护，不会被替换。&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;隐私&lt;/strong&gt; — 文件在服务器端处理并临时存储。使用&lt;em&gt;删除我的文件&lt;/em&gt;按钮。&lt;/p&gt;</value>
+  </data>
+</root>

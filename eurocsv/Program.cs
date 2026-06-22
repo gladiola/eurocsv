@@ -1,9 +1,13 @@
 using eurocsv.Services;
+using Microsoft.AspNetCore.Localization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services
-builder.Services.AddControllersWithViews();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
+builder.Services.AddControllersWithViews()
+    .AddViewLocalization()
+    .AddDataAnnotationsLocalization();
 builder.Services.AddAntiforgery();
 builder.Services.AddScoped<ICsvTransformService, CsvTransformService>();
 builder.Services.AddSingleton<ITempFileService, TempFileService>();
@@ -30,6 +34,44 @@ else
     app.UseExceptionHandler("/Home/Error");
 }
 
+// All 34 locale presets, grouped by unique UI language so ASP.NET Core fallback chain works.
+// Region-specific cultures (e.g. de-DE, de-AT, de-CH) inherit translations from the parent
+// culture file (SharedResource.de.resx); no separate per-region UI file is required.
+var supportedCultures = new[]
+{
+    "en-US", "en-GB",
+    "de-DE", "de-AT", "de-CH",
+    "fr-FR", "fr-BE", "fr-CH",
+    "es-ES", "es-MX",
+    "it-IT",
+    "nl-NL", "nl-BE",
+    "pt-PT", "pt-BR",
+    "pl-PL",
+    "cs-CZ",
+    "sk-SK",
+    "ru-RU",
+    "sv-SE",
+    "da-DK",
+    "nb-NO",
+    "fi-FI",
+    "hu-HU",
+    "ro-RO",
+    "tr-TR",
+    "ja-JP",
+    "zh-CN",
+    "el-GR",
+    "bg-BG",
+    "hr-HR",
+    "uk-UA",
+    "lt-LT",
+    "lv-LV",
+};
+
+app.UseRequestLocalization(new RequestLocalizationOptions()
+    .SetDefaultCulture("en-US")
+    .AddSupportedCultures(supportedCultures)
+    .AddSupportedUICultures(supportedCultures));
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
@@ -52,4 +94,5 @@ app.Run();
 
 // Make Program accessible for testing
 public partial class Program { }
+
 

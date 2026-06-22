@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Hjem</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Konverter CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Privatliv</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Sprog</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Konverter CSV-filer mellem internationale formateringskonventioner på få sekunder.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Konverter en CSV-fil</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Upload</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Upload din CSV-fil (op til 50 MB). Din fil behandles i hukommelsen og gemmes aldrig permanent.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Konfigurer</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Vælg kilde- og mållokal. Juster afgrænsere, decimalseparatorer og mere.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Download</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Download din konverterede fil. Start sletning af filer til enhver tid — vi beholder aldrig dine data.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Understøttede lokalekonventioner</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Landestandard</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Afgrænser</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Decimal</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Tusinder</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Datoformat</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Konverter CSV-fil</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Konvertering fuldført</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Originalfil</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Kildelokal</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Mållokal</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Konverteret filstørrelse</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Download original</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Download konverteret fil</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Slet mine filer nu</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Upload og konverter</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV-fil</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Maks. filstørrelse: 50 MB. Accepterede formater: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Kildelokal (Fra)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Mållokal (Til)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Transformationsindstillinger</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Konverter feltafgrænser</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Konverter decimalafgrænser</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Konverter tusindafgrænser</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Respekter citerede felter</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Konverter linjeafslutninger</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Outputlinjeafslutninger</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Brugerdefineret tilsidesættelse (lad stå tomt for at bruge lokalforudindstilling)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Kildeafgrænser</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Målafgrænser</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Kildedecimal</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Måldecimal</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Kildetusinder</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Måltusinder</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Konverter nu</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Sådan fungerer det</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Gratis CSV-konverter</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Privatlivspolitik</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Skift navigation</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Dine filer gemmes midlertidigt på serveren. Klik på knappen nedenfor for at slette dem med det samme, eller de slettes automatisk inden for 2 timer.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Slet midlertidige filer nu? Du kan ikke længere downloade dem.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Skilletegn&lt;/strong&gt; — Tegnet der adskiller felter. Europæiske CSV-filer bruger typisk &lt;code&gt;;&lt;/code&gt;, engelske &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimaltegn&lt;/strong&gt; — Tegnet for decimaler. Tysk: &lt;code&gt;1.234,56&lt;/code&gt; → Engelsk: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tusindtalstegn&lt;/strong&gt; — Aktivér kun hvis filen indeholder formaterede tal.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Citerede felter&lt;/strong&gt; — Felter i citationstegn beskyttes mod erstatninger.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privatliv&lt;/strong&gt; — Dine filer behandles server-side og gemmes midlertidigt. Brug knappen &lt;em&gt;Slet mine filer&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

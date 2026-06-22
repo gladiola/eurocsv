@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Converti CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Lingua</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Converti file CSV tra diverse convenzioni di formattazione internazionale in pochi secondi.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Converti un file CSV</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Carica</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Carica il tuo file CSV (fino a 50 MB). Il file viene elaborato in memoria e non viene mai archiviato permanentemente.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Configura</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Scegli le impostazioni locali di origine e di destinazione. Personalizza delimitatori, separatori decimali e altro.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Scarica</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Scarica il file convertito. Avvia l'eliminazione del file in qualsiasi momento — non conserviamo mai i tuoi dati.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Convenzioni locali supportate</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Impostazioni locali</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Delimitatore</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Decimale</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Migliaia</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Formato data</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Converti file CSV</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Conversione completata</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>File originale</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Impostazioni locali di origine</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Impostazioni locali di destinazione</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Dimensione file convertito</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Scarica originale</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Scarica file convertito</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Elimina i miei file ora</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Carica e converti</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>File CSV</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Dimensione massima: 50 MB. Formati accettati: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Impostazioni locali di origine (Da)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Impostazioni locali di destinazione (A)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Opzioni di trasformazione</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Converti delimitatore di campo</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Converti separatore decimale</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Converti separatore delle migliaia</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Rispetta i campi tra virgolette</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Converti fine riga</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Fine riga di output</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Sostituzione personalizzata (lasciare vuoto per usare il preset locale)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Delimitatore origine</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Delimitatore destinazione</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Decimale origine</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Decimale destinazione</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Migliaia origine</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Migliaia destinazione</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Converti ora</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Come funziona</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Convertitore CSV gratuito</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Informativa sulla privacy</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Attiva/disattiva navigazione</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>I file sono archiviati temporaneamente sul server. Fare clic sul pulsante sottostante per eliminarli immediatamente, oppure verranno rimossi automaticamente entro 2 ore.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Eliminare i file temporanei ora? Non sarà più possibile scaricarli.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Delimitatore&lt;/strong&gt; — Il carattere separatore. I CSV europei usano &lt;code&gt;;&lt;/code&gt;, quelli inglesi &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separatore decimale&lt;/strong&gt; — Il carattere decimale. Tedesco: &lt;code&gt;1.234,56&lt;/code&gt; → Inglese: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separatore migliaia&lt;/strong&gt; — Abilitarlo solo se il file contiene numeri formattati.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Campi tra virgolette&lt;/strong&gt; — I campi tra virgolette sono protetti dalle sostituzioni.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privacy&lt;/strong&gt; — I file vengono elaborati lato server e archiviati temporaneamente. Usa il pulsante &lt;em&gt;Elimina i miei file&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

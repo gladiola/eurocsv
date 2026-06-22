@@ -7,12 +7,9 @@
     <div class="col-lg-8">
         <div class="p-4 mb-4 bg-light rounded-3">
             <h1 class="display-5 fw-bold">📊 EuroCSV</h1>
-            <p class="lead">Convert CSV files between international formatting conventions in seconds.</p>
-            <p>Different countries use different conventions for CSV files — German files typically use a <strong>semicolon separator</strong>
-               and a <strong>comma as the decimal point</strong>, while English files use a <strong>comma separator</strong> and a
-               <strong>period as the decimal point</strong>. EuroCSV handles all these differences for you.</p>
+            <p class="lead">@L["IndexTagline"]</p>
             <a class="btn btn-primary btn-lg" asp-controller="Csv" asp-action="Convert">
-                🔄 Convert a CSV File
+                🔄 @L["IndexConvertButton"]
             </a>
         </div>
 
@@ -20,40 +17,40 @@
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">📤 Upload</h5>
-                        <p class="card-text text-muted">Upload your CSV file (up to 50 MB). Your file is processed in memory and never stored permanently.</p>
+                        <h5 class="card-title">📤 @L["IndexUploadTitle"]</h5>
+                        <p class="card-text text-muted">@L["IndexUploadDesc"]</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">⚙️ Configure</h5>
-                        <p class="card-text text-muted">Choose source and target locale conventions. Fine-tune delimiters, decimal separators, and more.</p>
+                        <h5 class="card-title">⚙️ @L["IndexConfigureTitle"]</h5>
+                        <p class="card-text text-muted">@L["IndexConfigureDesc"]</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card h-100 border-0 shadow-sm">
                     <div class="card-body">
-                        <h5 class="card-title">📥 Download</h5>
-                        <p class="card-text text-muted">Download your converted file. Initiate file deletion at any time — we never retain your data.</p>
+                        <h5 class="card-title">📥 @L["IndexDownloadTitle"]</h5>
+                        <p class="card-text text-muted">@L["IndexDownloadDesc"]</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <h2 class="h4 mb-3">Supported Locale Conventions</h2>
+        <h2 class="h4 mb-3">@L["IndexSupportedLocales"]</h2>
         <p class="text-muted">EuroCSV includes presets for @Model.AvailableLocales.Count locales:</p>
         <div class="table-responsive mb-4">
             <table class="table table-sm table-striped">
                 <thead class="table-dark">
                     <tr>
-                        <th>Locale</th>
-                        <th>Delimiter</th>
-                        <th>Decimal</th>
-                        <th>Thousands</th>
-                        <th>Date Format</th>
+                        <th>@L["TableLocale"]</th>
+                        <th>@L["TableDelimiter"]</th>
+                        <th>@L["TableDecimal"]</th>
+                        <th>@L["TableThousands"]</th>
+                        <th>@L["TableDateFormat"]</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -85,7 +82,7 @@
                  data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             -->
-            <small class="text-muted">Advertisement</small>
+            <small class="text-muted">@L["Advertisement"]</small>
         </div>
     </div>
 </div>
