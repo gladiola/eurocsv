@@ -3,6 +3,9 @@ using System.Text;
 
 namespace eurocsv.Services
 {
+    /// <summary>
+    /// Defines the contract for transforming a CSV stream between two locale conventions.
+    /// </summary>
     public interface ICsvTransformService
     {
         /// <summary>
@@ -12,6 +15,35 @@ namespace eurocsv.Services
         MemoryStream Transform(Stream inputStream, CsvConversionOptions options);
     }
 
+    /// <summary>
+    /// Core CSV transformation engine.
+    /// </summary>
+    /// <remarks>
+    /// <para>
+    /// <strong>Field splitting</strong> — implements the RFC-4180 quoted-field parser when
+    /// <see cref="CsvConversionOptions.HandleTextQualifiers"/> is <c>true</c>.  Escaped
+    /// double-quotes inside a quoted field (represented as <c>""</c>) are handled correctly;
+    /// the de-escaped value is used for numeric conversion and the quotes are re-applied on
+    /// output.  Values that acquire the target delimiter after conversion are automatically
+    /// re-quoted.
+    /// </para>
+    /// <para>
+    /// <strong>Numeric conversion</strong> — uses a three-step placeholder swap to prevent
+    /// double-replacement when the decimal separator and the thousands separator share the same
+    /// character in one of the two locales (e.g. converting <c>1.234,56</c> DE→EN):
+    /// <list type="number">
+    ///   <item>Replace the <em>source</em> thousands separator with an internal placeholder (<c>\x01\x02\x03</c>).</item>
+    ///   <item>Replace the <em>source</em> decimal separator with the target decimal separator.</item>
+    ///   <item>Replace the placeholder with the <em>target</em> thousands separator.</item>
+    /// </list>
+    /// </para>
+    /// <para>
+    /// <strong>Thousands-separator opt-in</strong> — thousands conversion is only active when
+    /// <see cref="CsvConversionOptions.ConvertThousandSeparator"/> is explicitly set to
+    /// <c>true</c>.  The default is <c>false</c> to avoid corrupting date-like values such as
+    /// <c>31.12.2024</c> that happen to contain the same character as the thousands separator.
+    /// </para>
+    /// </remarks>
     public class CsvTransformService : ICsvTransformService
     {
         public MemoryStream Transform(Stream inputStream, CsvConversionOptions options)
@@ -114,6 +146,10 @@ namespace eurocsv.Services
             return string.Join(options.ConvertDelimiter ? toDelim : fromDelim, transformedFields);
         }
 
+        /// <summary>
+        /// Applies decimal and/or thousands separator replacements to a single unquoted field value,
+        /// using a placeholder to prevent characters from being replaced twice.
+        /// </summary>
         private static string TransformNumericValue(
             string value,
             string fromDecimal,

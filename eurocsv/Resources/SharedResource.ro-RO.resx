@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Acasă</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Convertiți CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Confidențialitate</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Limbă</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Convertiți fișiere CSV între convențiile de formatare internaționale în câteva secunde.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Convertiți un fișier CSV</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Încărcați</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Încărcați fișierul CSV (până la 50 MB). Fișierul dvs. este procesat în memorie și nu este niciodată stocat permanent.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Configurați</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Alegeți localizările sursă și destinație. Ajustați delimitatorii, separatorii zecimali și altele.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Descărcați</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Descărcați fișierul convertit. Inițiați ștergerea fișierului oricând — nu reținem niciodată datele dvs.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Convenții regionale acceptate</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Localizare</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Delimitator</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Zecimal</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Mii</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Format dată</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Convertiți fișierul CSV</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Conversie finalizată</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Fișier original</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Localizare sursă</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Localizare destinație</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Dimensiunea fișierului convertit</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Descărcați originalul</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Descărcați fișierul convertit</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Ștergeți fișierele mele acum</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Încărcați și convertiți</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>Fișier CSV</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Dimensiune max.: 50 MB. Formate acceptate: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Localizare sursă (De la)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Localizare destinație (La)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Opțiuni de transformare</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Convertiți delimitatorul de câmp</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Convertiți separatorul zecimal</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Convertiți separatorul miilor</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Respectați câmpurile între ghilimele</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Convertiți terminațiile de linie</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Terminații de linie ieșire</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Înlocuire personalizată (lăsați necompletat pentru a folosi presetarea regională)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Delimitator sursă</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Delimitator destinație</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Zecimal sursă</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Zecimal destinație</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Mii sursă</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Mii destinație</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Convertiți acum</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Cum funcționează</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Convertor CSV gratuit</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Politică de confidențialitate</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Comutați navigarea</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Fișierele dvs. sunt stocate temporar pe server. Faceți clic pe butonul de mai jos pentru a le șterge imediat sau vor fi eliminate automat în 2 ore.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Ștergeți fișierele temporare acum? Nu le veți mai putea descărca.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Delimitator&lt;/strong&gt; — Caracterul separator de câmpuri. CSV-urile europene folosesc de obicei &lt;code&gt;;&lt;/code&gt;, cele englezești &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separator zecimal&lt;/strong&gt; — Caracterul zecimal. Germană: &lt;code&gt;1.234,56&lt;/code&gt; → Engleză: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separator de mii&lt;/strong&gt; — Activați doar dacă fișierul conține numere formatate.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Câmpuri între ghilimele&lt;/strong&gt; — Câmpurile între ghilimele sunt protejate de substituiri.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Confidențialitate&lt;/strong&gt; — Fișierele sunt procesate pe server și stocate temporar. Folosiți butonul &lt;em&gt;Șterge fișierele mele&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

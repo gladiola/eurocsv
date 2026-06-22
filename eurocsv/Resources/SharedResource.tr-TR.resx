@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Ana Sayfa</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>CSV Dönüştür</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Gizlilik</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Dil</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>CSV dosyalarını saniyeler içinde uluslararası biçimlendirme kuralları arasında dönüştürün.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Bir CSV Dosyası Dönüştür</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Yükle</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>CSV dosyanızı yükleyin (50 MB'a kadar). Dosyanız bellekte işlenir ve kalıcı olarak hiçbir zaman depolanmaz.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Yapılandır</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Kaynak ve hedef yerel ayarları seçin. Sınırlayıcıları, ondalık ayırıcıları ve daha fazlasını ince ayarlayın.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 İndir</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Dönüştürülmüş dosyanızı indirin. İstediğiniz zaman dosya silmeyi başlatın — verilerinizi hiçbir zaman saklayız.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Desteklenen Yerel Kurallar</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Yerel Ayar</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Sınırlayıcı</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Ondalık</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Binler</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Tarih Biçimi</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 CSV Dosyasını Dönüştür</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Dönüşüm Tamamlandı</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Orijinal dosya</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Kaynak yerel ayarı</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Hedef yerel ayarı</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Dönüştürülmüş dosya boyutu</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Orijinali İndir</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Dönüştürülmüş Dosyayı İndir</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Dosyalarımı Şimdi Sil</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Yükle ve Dönüştür</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV Dosyası</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Maks. dosya boyutu: 50 MB. Kabul edilen biçimler: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Kaynak Yerel Ayarı (Kimden)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Hedef Yerel Ayarı (Kime)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Dönüşüm Seçenekleri</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Alan sınırlayıcıyı dönüştür</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Ondalık ayırıcıyı dönüştür</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Binler ayırıcısını dönüştür</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Alıntılanan alanları dikkate al</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Satır sonlarını dönüştür</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Çıktı satır sonları</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Özel geçersiz kılma (yerel ön ayarı kullanmak için boş bırakın)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Kaynak sınırlayıcı</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Hedef sınırlayıcı</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Kaynak ondalık</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Hedef ondalık</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Kaynak binler</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Hedef binler</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Şimdi Dönüştür</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Nasıl Çalışır</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Ücretsiz CSV Dönüştürücü</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Navigasyonu değiştir</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Dosyalarınız sunucuda geçici olarak saklanmaktadır. Hemen silmek için aşağıdaki düğmeye tıklayın veya 2 saat içinde otomatik olarak silinecektir.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Geçici dosyaları şimdi sil? Artık indiremeyeceksiniz.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Sınırlayıcı&lt;/strong&gt; — Alan ayırma karakteri. Avrupa CSV dosyaları genellikle &lt;code&gt;;&lt;/code&gt;, İngilizce olanlar &lt;code&gt;,&lt;/code&gt; kullanır.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ondalık ayırıcı&lt;/strong&gt; — Ondalık karakter. Almanca: &lt;code&gt;1.234,56&lt;/code&gt; → İngilizce: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Binlik ayırıcı&lt;/strong&gt; — Yalnızca dosya biçimlendirilmiş sayılar içeriyorsa etkinleştirin.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tırnaklı alanlar&lt;/strong&gt; — Tırnak içindeki alanlar değiştirimden korunur.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Gizlilik&lt;/strong&gt; — Dosyalar sunucu tarafında işlenir ve geçici olarak saklanır. &lt;em&gt;Dosyalarımı Sil&lt;/em&gt; düğmesini kullanın.&lt;/p&gt;</value>
+  </data>
+</root>

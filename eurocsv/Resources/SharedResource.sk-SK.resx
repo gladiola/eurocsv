@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Domov</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Konvertovať CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Súkromie</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Jazyk</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Konvertujte súbory CSV medzi medzinárodnými formátovacími konvenciami v priebehu sekúnd.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Konvertovať súbor CSV</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Nahrať</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Nahrajte súbor CSV (až 50 MB). Súbor sa spracuje v pamäti a nikdy sa trvale neuloží.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Konfigurovať</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Vyberte zdrojovú a cieľovú oblasť. Prispôsobte oddeľovače, desatinné oddeľovače a ďalšie.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Stiahnuť</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Stiahnite konvertovaný súbor. Spustite mazanie súboru kedykoľvek — vaše dáta nikdy neuchovávame.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Podporované regionálne konvencie</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Oblasť</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Oddeľovač</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Desatinný</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Tisíce</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Formát dátumu</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Konvertovať súbor CSV</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Konverzia dokončená</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Pôvodný súbor</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Zdrojová oblasť</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Cieľová oblasť</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Veľkosť konvertovaného súboru</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Stiahnuť originál</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Stiahnuť konvertovaný súbor</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Vymazať moje súbory teraz</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Nahrať a konvertovať</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>Súbor CSV</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Max. veľkosť: 50 MB. Akceptované formáty: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Zdrojová oblasť (Z)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Cieľová oblasť (Na)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Možnosti transformácie</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Konvertovať oddeľovač polí</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Konvertovať desatinný oddeľovač</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Konvertovať oddeľovač tisícov</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Rešpektovať uvádzané polia</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Konvertovať konce riadkov</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Konce riadkov výstupu</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Vlastné prepísanie (ponechajte prázdne pre použitie predvoľby oblasti)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Oddeľovač zdroj</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Oddeľovač cieľ</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Desatinný zdroj</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Desatinný cieľ</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Tisíce zdroj</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Tisíce cieľ</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Konvertovať teraz</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Ako to funguje</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Bezplatný konvertor CSV</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Ochrana súkromia</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Prepnúť navigáciu</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Vaše súbory sú dočasne uložené na serveri. Kliknite na tlačidlo nižšie pre ich okamžité vymazanie, alebo budú automaticky odstránené do 2 hodín.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Vymazať dočasné súbory teraz? Nebudete ich môcť stiahnuť.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Oddeľovač&lt;/strong&gt; — Znak na oddelenie polí. Európske CSV súbory zvyčajne používajú &lt;code&gt;;&lt;/code&gt;, anglické &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Oddeľovač desatín&lt;/strong&gt; — Znak pre desatinné čísla. Nemčina: &lt;code&gt;1.234,56&lt;/code&gt; → Angličtina: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Oddeľovač tisícok&lt;/strong&gt; — Aktivujte len ak súbor obsahuje formátované čísla.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Polia v úvodzovkách&lt;/strong&gt; — Polia v úvodzovkách sú chránené pred substitúciou.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Súkromie&lt;/strong&gt; — Súbory sú spracované na serveri a dočasne uložené. Použite tlačidlo &lt;em&gt;Odstrániť moje súbory&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

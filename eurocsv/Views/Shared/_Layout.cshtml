@@ -23,19 +23,81 @@
                     📊 EuroCSV
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="@L["NavToggleNavigation"]">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">@L["NavHome"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Csv" asp-action="Convert">Convert CSV</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Csv" asp-action="Convert">@L["NavConvertCsv"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">@L["NavPrivacy"]</a>
+                        </li>
+                    </ul>
+                    <!-- Language switcher -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" id="langDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                🌐 @L["LanguageSelect"]
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                                @{
+                                    var cultures = new[]
+                                    {
+                                        ("en-US", "English (US)"),
+                                        ("en-GB", "English (UK)"),
+                                        ("de-DE", "Deutsch (DE)"),
+                                        ("de-AT", "Deutsch (AT)"),
+                                        ("de-CH", "Deutsch (CH)"),
+                                        ("fr-FR", "Français (FR)"),
+                                        ("fr-BE", "Français (BE)"),
+                                        ("fr-CH", "Français (CH)"),
+                                        ("es-ES", "Español (ES)"),
+                                        ("es-MX", "Español (MX)"),
+                                        ("it-IT", "Italiano"),
+                                        ("nl-NL", "Nederlands (NL)"),
+                                        ("nl-BE", "Nederlands (BE)"),
+                                        ("pt-PT", "Português (PT)"),
+                                        ("pt-BR", "Português (BR)"),
+                                        ("pl-PL", "Polski"),
+                                        ("cs-CZ", "Čeština"),
+                                        ("sk-SK", "Slovenčina"),
+                                        ("ru-RU", "Русский"),
+                                        ("sv-SE", "Svenska"),
+                                        ("da-DK", "Dansk"),
+                                        ("nb-NO", "Norsk"),
+                                        ("fi-FI", "Suomi"),
+                                        ("hu-HU", "Magyar"),
+                                        ("ro-RO", "Română"),
+                                        ("tr-TR", "Türkçe"),
+                                        ("ja-JP", "日本語"),
+                                        ("zh-CN", "中文 (简体)"),
+                                        ("el-GR", "Ελληνικά"),
+                                        ("bg-BG", "Български"),
+                                        ("hr-HR", "Hrvatski"),
+                                        ("uk-UA", "Українська"),
+                                        ("lt-LT", "Lietuvių"),
+                                        ("lv-LV", "Latviešu"),
+                                    };
+                                    var returnUrl = Context.Request.Path + Context.Request.QueryString;
+                                    foreach (var (code, label) in cultures)
+                                    {
+                                        <li>
+                                            <form asp-controller="Culture" asp-action="SetCulture" method="post" class="d-inline">
+                                                @Html.AntiForgeryToken()
+                                                <input type="hidden" name="culture" value="@code" />
+                                                <input type="hidden" name="returnUrl" value="@returnUrl" />
+                                                <button type="submit" class="dropdown-item">@label</button>
+                                            </form>
+                                        </li>
+                                    }
+                                }
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -56,7 +118,7 @@
                  data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             -->
-            <small class="text-muted">Advertisement</small>
+            <small class="text-muted">@L["Advertisement"]</small>
         </div>
     </div>
 
@@ -86,7 +148,7 @@
                  data-full-width-responsive="true"></ins>
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
             -->
-            <small class="text-muted">Advertisement</small>
+            <small class="text-muted">@L["Advertisement"]</small>
         </div>
     </div>
 
@@ -94,11 +156,11 @@
         <div class="container py-2">
             <div class="row">
                 <div class="col-md-6">
-                    &copy; 2026 EuroCSV &mdash; Free CSV Localization Converter
+                    @L["FooterCopyright"]
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-muted me-3">Privacy Policy</a>
-                    <a asp-area="" asp-controller="Csv" asp-action="Convert" class="text-muted">Convert CSV</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-muted me-3">@L["FooterPrivacyPolicy"]</a>
+                    <a asp-area="" asp-controller="Csv" asp-action="Convert" class="text-muted">@L["NavConvertCsv"]</a>
                 </div>
             </div>
         </div>

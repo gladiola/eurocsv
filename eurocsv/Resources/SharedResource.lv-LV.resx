@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Sākums</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Konvertēt CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Privātums</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Valoda</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Pārveidojiet CSV failus starp starptautiskajām formatēšanas konvencijām sekundēs.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Konvertēt CSV failu</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Augšupielādēt</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Augšupielādējiet CSV failu (līdz 50 MB). Fails tiek apstrādāts atmiņā un nekad netiek saglabāts pastāvīgi.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Konfigurēt</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Izvēlieties avota un mērķa reģionālos iestatījumus. Precizējiet atdalītājus, decimālatdalītājus un citus.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Lejupielādēt</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Lejupielādējiet konvertēto failu. Jebkurā laikā uzsāciet faila dzēšanu — mēs nekad neglabājam jūsu datus.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Atbalstītās reģionālās konvencijas</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Reģionālie iestatījumi</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Atdalītājs</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Decimāls</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Tūkstoši</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Datuma formāts</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Konvertēt CSV failu</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Konvertēšana pabeigta</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Oriģinālais fails</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Avota reģionālie iestatījumi</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Mērķa reģionālie iestatījumi</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Konvertētā faila lielums</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Lejupielādēt oriģinālu</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Lejupielādēt konvertēto failu</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Dzēst manus failus tagad</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Augšupielādēt un konvertēt</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>CSV fails</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Maks. lielums: 50 MB. Pieņemtie formāti: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Avota reģionālie iestatījumi (No)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Mērķa reģionālie iestatījumi (Uz)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Transformācijas opcijas</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Konvertēt lauka atdalītāju</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Konvertēt decimālatdalītāju</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Konvertēt tūkstošu atdalītāju</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Ievērot pēdiņās iekļautus laukus</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Konvertēt rindu beigas</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Izvades rindu beigas</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Pielāgota ignorēšana (atstājiet tukšu, lai izmantotu iestatījumu priekšiestatījumu)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Avota atdalītājs</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Mērķa atdalītājs</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Avota decimāls</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Mērķa decimāls</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Avota tūkstoši</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Mērķa tūkstoši</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Konvertēt tagad</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Kā tas darbojas</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Bezmaksas CSV konvertētājs</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Privātuma politika</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Pārslēgt navigāciju</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Jūsu faili tiek īslaicīgi glabāti serverī. Noklikšķiniet uz pogas zemāk, lai tos nekavējoties dzēstu, vai arī tie tiks automātiski noņemti 2 stundu laikā.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Dzēst pagaidu failus tagad? Jūs vairs nevarēsit tos lejupielādēt.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Atdalītājs&lt;/strong&gt; — Lauku atdalīšanas simbols. Eiropas CSV faili parasti izmanto &lt;code&gt;;&lt;/code&gt;, angļu valodas &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimālatdalītājs&lt;/strong&gt; — Decimālskaitļu simbols. Vāciski: &lt;code&gt;1.234,56&lt;/code&gt; → Angliski: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tūkstošu atdalītājs&lt;/strong&gt; — Iespējojiet tikai tad, ja fails satur formatētus skaitļus.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Citēti lauki&lt;/strong&gt; — Lauki pēdiņās ir aizsargāti pret aizstāšanu.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privātums&lt;/strong&gt; — Faili tiek apstrādāti servera pusē un īslaicīgi glabāti. Izmantojiet pogu &lt;em&gt;Dzēst manus failus&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="NavHome" xml:space="preserve">
+    <value>Αρχική</value>
+  </data>
+  <data name="NavConvertCsv" xml:space="preserve">
+    <value>Μετατροπή CSV</value>
+  </data>
+  <data name="NavPrivacy" xml:space="preserve">
+    <value>Απόρρητο</value>
+  </data>
+  <data name="LanguageSelect" xml:space="preserve">
+    <value>Γλώσσα</value>
+  </data>
+  <data name="IndexTagline" xml:space="preserve">
+    <value>Μετατρέψτε αρχεία CSV μεταξύ διεθνών συμβάσεων μορφοποίησης σε δευτερόλεπτα.</value>
+  </data>
+  <data name="IndexConvertButton" xml:space="preserve">
+    <value>🔄 Μετατροπή αρχείου CSV</value>
+  </data>
+  <data name="IndexUploadTitle" xml:space="preserve">
+    <value>📤 Αποστολή</value>
+  </data>
+  <data name="IndexUploadDesc" xml:space="preserve">
+    <value>Ανεβάστε το αρχείο CSV σας (έως 50 MB). Το αρχείο επεξεργάζεται στη μνήμη και δεν αποθηκεύεται ποτέ μόνιμα.</value>
+  </data>
+  <data name="IndexConfigureTitle" xml:space="preserve">
+    <value>⚙️ Ρύθμιση</value>
+  </data>
+  <data name="IndexConfigureDesc" xml:space="preserve">
+    <value>Επιλέξτε τοπικές ρυθμίσεις πηγής και προορισμού. Ρυθμίστε οριοθέτες, δεκαδικά σημεία και άλλα.</value>
+  </data>
+  <data name="IndexDownloadTitle" xml:space="preserve">
+    <value>📥 Λήψη</value>
+  </data>
+  <data name="IndexDownloadDesc" xml:space="preserve">
+    <value>Κατεβάστε το μετατραπέν αρχείο σας. Ξεκινήστε τη διαγραφή αρχείων οποτεδήποτε — δεν διατηρούμε ποτέ τα δεδομένα σας.</value>
+  </data>
+  <data name="IndexSupportedLocales" xml:space="preserve">
+    <value>Υποστηριζόμενες συμβάσεις τοπικής ρύθμισης</value>
+  </data>
+  <data name="TableLocale" xml:space="preserve">
+    <value>Τοπική ρύθμιση</value>
+  </data>
+  <data name="TableDelimiter" xml:space="preserve">
+    <value>Οριοθέτης</value>
+  </data>
+  <data name="TableDecimal" xml:space="preserve">
+    <value>Δεκαδικό</value>
+  </data>
+  <data name="TableThousands" xml:space="preserve">
+    <value>Χιλιάδες</value>
+  </data>
+  <data name="TableDateFormat" xml:space="preserve">
+    <value>Μορφή ημερομηνίας</value>
+  </data>
+  <data name="ConvertTitle" xml:space="preserve">
+    <value>🔄 Μετατροπή αρχείου CSV</value>
+  </data>
+  <data name="ConvertCompleteTitle" xml:space="preserve">
+    <value>✅ Η μετατροπή ολοκληρώθηκε</value>
+  </data>
+  <data name="ConvertOriginalFile" xml:space="preserve">
+    <value>Αρχικό αρχείο</value>
+  </data>
+  <data name="ConvertFromLocale" xml:space="preserve">
+    <value>Τοπική ρύθμιση πηγής</value>
+  </data>
+  <data name="ConvertToLocale" xml:space="preserve">
+    <value>Τοπική ρύθμιση προορισμού</value>
+  </data>
+  <data name="ConvertConvertedSize" xml:space="preserve">
+    <value>Μέγεθος μετατραπέντος αρχείου</value>
+  </data>
+  <data name="ConvertDownloadOriginal" xml:space="preserve">
+    <value>📥 Λήψη πρωτοτύπου</value>
+  </data>
+  <data name="ConvertDownloadConverted" xml:space="preserve">
+    <value>📥 Λήψη μετατραπέντος αρχείου</value>
+  </data>
+  <data name="ConvertDeleteFiles" xml:space="preserve">
+    <value>🗑️ Διαγραφή αρχείων μου τώρα</value>
+  </data>
+  <data name="ConvertUploadSection" xml:space="preserve">
+    <value>Αποστολή και μετατροπή</value>
+  </data>
+  <data name="ConvertCsvFile" xml:space="preserve">
+    <value>Αρχείο CSV</value>
+  </data>
+  <data name="ConvertCsvFileHelp" xml:space="preserve">
+    <value>Μέγ. μέγεθος: 50 MB. Αποδεκτές μορφές: .csv, .txt</value>
+  </data>
+  <data name="ConvertSourceLocale" xml:space="preserve">
+    <value>Τοπική ρύθμιση πηγής (Από)</value>
+  </data>
+  <data name="ConvertTargetLocale" xml:space="preserve">
+    <value>Τοπική ρύθμιση προορισμού (Προς)</value>
+  </data>
+  <data name="ConvertOptions" xml:space="preserve">
+    <value>⚙️ Επιλογές μετασχηματισμού</value>
+  </data>
+  <data name="ConvertConvertDelimiter" xml:space="preserve">
+    <value>Μετατροπή οριοθέτη πεδίου</value>
+  </data>
+  <data name="ConvertConvertDecimal" xml:space="preserve">
+    <value>Μετατροπή δεκαδικού οριοθέτη</value>
+  </data>
+  <data name="ConvertConvertThousands" xml:space="preserve">
+    <value>Μετατροπή οριοθέτη χιλιάδων</value>
+  </data>
+  <data name="ConvertHandleQualifiers" xml:space="preserve">
+    <value>Σεβασμός σε πεδία με εισαγωγικά</value>
+  </data>
+  <data name="ConvertConvertLineEndings" xml:space="preserve">
+    <value>Μετατροπή τέλους γραμμής</value>
+  </data>
+  <data name="ConvertOutputLineEnding" xml:space="preserve">
+    <value>Τέλη γραμμής εξόδου</value>
+  </data>
+  <data name="ConvertCRLF" xml:space="preserve">
+    <value>CRLF (Windows)</value>
+  </data>
+  <data name="ConvertLF" xml:space="preserve">
+    <value>LF (Unix/Mac)</value>
+  </data>
+  <data name="ConvertCustomOverride" xml:space="preserve">
+    <value>Προσαρμοσμένη παράκαμψη (αφήστε κενό για χρήση προεπιλογής)</value>
+  </data>
+  <data name="ConvertFromDelimiter" xml:space="preserve">
+    <value>Οριοθέτης πηγής</value>
+  </data>
+  <data name="ConvertToDelimiter" xml:space="preserve">
+    <value>Οριοθέτης προορισμού</value>
+  </data>
+  <data name="ConvertFromDecimal" xml:space="preserve">
+    <value>Δεκαδικό πηγής</value>
+  </data>
+  <data name="ConvertToDecimal" xml:space="preserve">
+    <value>Δεκαδικό προορισμού</value>
+  </data>
+  <data name="ConvertFromThousands" xml:space="preserve">
+    <value>Χιλιάδες πηγής</value>
+  </data>
+  <data name="ConvertToThousands" xml:space="preserve">
+    <value>Χιλιάδες προορισμού</value>
+  </data>
+  <data name="ConvertNow" xml:space="preserve">
+    <value>🔄 Μετατροπή τώρα</value>
+  </data>
+  <data name="HowItWorksTitle" xml:space="preserve">
+    <value>ℹ️ Πώς λειτουργεί</value>
+  </data>
+  <data name="Advertisement" xml:space="preserve">
+    <value>Advertisement</value>
+  </data>
+  <data name="FooterCopyright" xml:space="preserve">
+    <value>© 2026 EuroCSV — Δωρεάν μετατροπέας CSV</value>
+  </data>
+  <data name="FooterPrivacyPolicy" xml:space="preserve">
+    <value>Πολιτική απορρήτου</value>
+  </data>
+  <data name="NavToggleNavigation" xml:space="preserve">
+    <value>Εναλλαγή πλοήγησης</value>
+  </data>
+  <data name="ConvertDeleteFilesDesc" xml:space="preserve">
+    <value>Τα αρχεία σας αποθηκεύονται προσωρινά στον διακομιστή. Κάντε κλικ στο κουμπί παρακάτω για άμεση διαγραφή, ή θα αφαιρεθούν αυτόματα εντός 2 ωρών.</value>
+  </data>
+  <data name="ConvertDeleteConfirm" xml:space="preserve">
+    <value>Διαγραφή προσωρινών αρχείων τώρα; Δεν θα μπορείτε πλέον να τα κατεβάσετε.</value>
+  </data>
+  <data name="HowItWorksBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;strong&gt;Διαχωριστής&lt;/strong&gt; — Ο χαρακτήρας διαχωρισμού πεδίων. Τα ευρωπαϊκά CSV χρησιμοποιούν &lt;code&gt;;&lt;/code&gt;, τα αγγλικά &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Δεκαδικός διαχωριστής&lt;/strong&gt; — Ο χαρακτήρας για δεκαδικούς. Γερμανικά: &lt;code&gt;1.234,56&lt;/code&gt; → Αγγλικά: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Διαχωριστής χιλιάδων&lt;/strong&gt; — Ενεργοποιήστε μόνο αν το αρχείο περιέχει μορφοποιημένους αριθμούς.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Πεδία σε εισαγωγικά&lt;/strong&gt; — Τα πεδία σε εισαγωγικά προστατεύονται από αντικαταστάσεις.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Απόρρητο&lt;/strong&gt; — Τα αρχεία επεξεργάζονται στον διακομιστή και αποθηκεύονται προσωρινά. Χρησιμοποιήστε το κουμπί &lt;em&gt;Διαγραφή αρχείων&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+</root>
