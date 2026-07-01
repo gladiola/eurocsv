@@ -170,6 +170,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respect quoted fields</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Keeps delimiters and separators inside quoted values from being converted as if they were real column breaks or numbers.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Convert line endings</value>
   </data>
@@ -184,6 +187,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Custom Override (leave blank to use locale preset)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Use these fields only when the file does not match the selected locale presets and you need to override the detected delimiters or separators manually.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>From delimiter</value>

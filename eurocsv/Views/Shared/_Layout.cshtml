@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/eurocsv.styles.css" asp-append-version="true" />
 
-    <!-- Google AdSense placeholder (replace data-ad-client with your publisher ID) -->
-    <!--
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
-         crossorigin="anonymous"></script>
-    -->
 </head>
 <body>
     <header>
@@ -32,7 +27,7 @@
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">@L["NavHome"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" asp-area="" asp-controller="Csv" asp-action="Convert">@L["NavConvertCsv"]</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="convert-workspace">@L["NavConvertCsv"]</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">@L["NavPrivacy"]</a>
@@ -105,23 +100,6 @@
         </nav>
     </header>
 
-    <!-- Top Ad Banner (Google AdSense placeholder) -->
-    <div class="container mb-3">
-        <div class="ad-banner-top text-center bg-light border rounded p-2" style="min-height:90px; display:flex; align-items:center; justify-content:center;">
-            <!-- Google AdSense banner ad — replace with live ad unit -->
-            <!--
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="banner"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            -->
-            <small class="text-muted">@L["Advertisement"]</small>
-        </div>
-    </div>
-
     <div class="container">
         @if (TempData["Message"] != null)
         {
@@ -135,23 +113,6 @@
         </main>
     </div>
 
-    <!-- Bottom Ad Banner (Google AdSense placeholder) -->
-    <div class="container mt-3 mb-3">
-        <div class="ad-banner-bottom text-center bg-light border rounded p-2" style="min-height:90px; display:flex; align-items:center; justify-content:center;">
-            <!-- Google AdSense banner ad — replace with live ad unit -->
-            <!--
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
-                 data-ad-slot="XXXXXXXXXX"
-                 data-ad-format="banner"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-            -->
-            <small class="text-muted">@L["Advertisement"]</small>
-        </div>
-    </div>
-
     <footer class="border-top footer text-muted">
         <div class="container py-2">
             <div class="row">
@@ -160,7 +121,7 @@
                 </div>
                 <div class="col-md-6 text-md-end">
                     <a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-muted me-3">@L["FooterPrivacyPolicy"]</a>
-                    <a asp-area="" asp-controller="Csv" asp-action="Convert" class="text-muted">@L["NavConvertCsv"]</a>
+                    <a asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="convert-workspace" class="text-muted">@L["NavConvertCsv"]</a>
                 </div>
             </div>
         </div>
@@ -171,4 +132,3 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
-
