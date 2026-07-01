@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Pretvorite CSV datoteke između međunarodnih konvencija formatiranja u sekundama.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Pretvori CSV datoteku</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Prijenos</value>
   </data>

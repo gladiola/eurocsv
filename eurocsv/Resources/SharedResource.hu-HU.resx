@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Konvertálja a CSV fájlokat különböző nemzetközi formázási konvenciók között másodpercek alatt.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 CSV fájl konvertálása</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Feltöltés</value>
   </data>

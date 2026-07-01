@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Muunna CSV-tiedostoja kansainvälisten muotoilukonventioiden välillä sekunneissa.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Muunna CSV-tiedosto</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Lataa</value>
   </data>
