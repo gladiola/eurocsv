@@ -1,5 +1,6 @@
 using eurocsv.Middleware;
 using eurocsv.Services;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.AspNetCore.Localization;
 using Serilog;
 using Serilog.Events;
@@ -64,6 +65,14 @@ builder.WebHost.ConfigureKestrel(options =>
 });
 
 var app = builder.Build();
+
+// Trust X-Forwarded-For and X-Forwarded-Proto from a reverse proxy (e.g. nginx).
+// Must be called before UseHttpsRedirection so that the forwarded scheme is visible
+// to subsequent middleware and redirect logic works correctly behind TLS termination.
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
 
 if (!app.Environment.IsDevelopment())
 {
