@@ -34,7 +34,7 @@ appsettings.*.json
 !appsettings.json
 
 # Temp session files created by TempFileService
-/tmp/eurocsv_sessions/
+eurocsv/tmp_sessions/
 
 # Test results
 TestResults/
