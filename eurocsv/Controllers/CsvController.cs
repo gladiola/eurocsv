@@ -25,12 +25,8 @@ namespace eurocsv.Controllers
         [HttpGet]
         public IActionResult Convert()
         {
-            var model = new ConversionSessionViewModel
-            {
-                Options = new CsvConversionOptions { FromLocale = "de-DE", ToLocale = "en-US" },
-                AvailableLocales = LocaleConvention.Presets
-            };
-            return View(model);
+            var homeUrl = Url.Action("Index", "Home") ?? "/";
+            return Redirect($"{homeUrl}#convert-workspace");
         }
 
         [HttpPost]
@@ -49,31 +45,31 @@ namespace eurocsv.Controllers
             if (csvFile == null || csvFile.Length == 0)
             {
                 model.ErrorMessage = "Please select a CSV file to upload.";
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
 
             if (csvFile.Length > MaxFileSizeBytes)
             {
                 model.ErrorMessage = $"File is too large. Maximum size is {MaxFileSizeBytes / (1024 * 1024)} MB.";
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
 
             if (!ModelState.IsValid)
             {
                 model.ErrorMessage = "Invalid conversion options.";
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
 
             if (model.FromConvention == null)
             {
                 model.ErrorMessage = $"Unknown source locale: {options.FromLocale}";
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
 
             if (model.ToConvention == null)
             {
                 model.ErrorMessage = $"Unknown target locale: {options.ToLocale}";
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
 
             try
@@ -95,13 +91,13 @@ namespace eurocsv.Controllers
                 model.TransformedFileSizeBytes = outputStream.Length;
 
                 _logger.LogInformation("Converted CSV for session {SessionId}: {From} -> {To}", sessionId, options.FromLocale, options.ToLocale);
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error converting CSV file");
                 model.ErrorMessage = "An error occurred while converting the file. Please check your settings and try again.";
-                return View("Convert", model);
+                return RenderHomeIndex(model);
             }
         }
 
@@ -144,8 +140,12 @@ namespace eurocsv.Controllers
             _logger.LogInformation("User initiated cleanup for session {SessionId}", sessionId);
 
             TempData["Message"] = "Your files have been securely deleted.";
-            return RedirectToAction("Convert");
+            var homeUrl = Url.Action("Index", "Home") ?? "/";
+            return Redirect($"{homeUrl}#convert-workspace");
         }
+
+        private IActionResult RenderHomeIndex(ConversionSessionViewModel model) =>
+            View("~/Views/Home/Index.cshtml", model);
 
         private static string BuildOutputFileName(string originalFileName, string toLocale)
         {
