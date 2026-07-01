@@ -14,11 +14,11 @@ namespace eurocsv.Models
     {
         /// <summary>Gets or sets the BCP-47 culture code of the source locale (e.g. <c>de-DE</c>).</summary>
         [Required]
-        public string FromLocale { get; set; } = "de-DE";
+        public string FromLocale { get; set; } = "en-GB";
 
         /// <summary>Gets or sets the BCP-47 culture code of the target locale (e.g. <c>en-US</c>).</summary>
         [Required]
-        public string ToLocale { get; set; } = "en-US";
+        public string ToLocale { get; set; } = "de-DE";
 
         // Override specific characters; empty means use locale preset
         /// <summary>Optional override for the source field delimiter. Leave blank to use the locale preset.</summary>
