@@ -49,9 +49,9 @@ namespace eurocsv.Controllers
                 "ConversionRequested | TraceId={TraceId} | FromLocale={FromLocale} | ToLocale={ToLocale} | " +
                 "ConvertDelimiter={ConvertDelimiter} | ConvertDecimal={ConvertDecimal} | ConvertThousands={ConvertThousands} | " +
                 "HandleQualifiers={HandleQualifiers} | ConvertLineEndings={ConvertLineEndings} | OutputLineEnding={OutputLineEnding}",
-                traceId, options.FromLocale, options.ToLocale,
+                traceId, SanitizeForLog(options.FromLocale), SanitizeForLog(options.ToLocale),
                 options.ConvertDelimiter, options.ConvertDecimalSeparator, options.ConvertThousandSeparator,
-                options.HandleTextQualifiers, options.ConvertLineEndings, options.OutputLineEnding);
+                options.HandleTextQualifiers, options.ConvertLineEndings, SanitizeForLog(options.OutputLineEnding));
 
             if (csvFile == null || csvFile.Length == 0)
             {
@@ -84,7 +84,7 @@ namespace eurocsv.Controllers
             {
                 _logger.LogWarning(
                     "UploadRejected | TraceId={TraceId} | Reason=UnknownSourceLocale | Locale={Locale}",
-                    traceId, options.FromLocale);
+                    traceId, SanitizeForLog(options.FromLocale));
                 model.ErrorMessage = $"Unknown source locale: {options.FromLocale}";
                 return RenderHomeIndex(model);
             }
@@ -93,7 +93,7 @@ namespace eurocsv.Controllers
             {
                 _logger.LogWarning(
                     "UploadRejected | TraceId={TraceId} | Reason=UnknownTargetLocale | Locale={Locale}",
-                    traceId, options.ToLocale);
+                    traceId, SanitizeForLog(options.ToLocale));
                 model.ErrorMessage = $"Unknown target locale: {options.ToLocale}";
                 return RenderHomeIndex(model);
             }
@@ -109,7 +109,7 @@ namespace eurocsv.Controllers
                 _logger.LogInformation(
                     "FileUploaded | TraceId={TraceId} | SessionId={SessionId} | OriginalFileName={FileName} | " +
                     "FileSizeBytes={FileSize} | TempPath={TempPath}",
-                    traceId, sessionId, csvFile.FileName, csvFile.Length, originalPath);
+                    traceId, sessionId, SanitizeForLog(csvFile.FileName), csvFile.Length, SanitizeForLog(originalPath));
 
                 // Transform
                 var started = DateTime.UtcNow;
@@ -128,8 +128,8 @@ namespace eurocsv.Controllers
                     "ConversionSucceeded | TraceId={TraceId} | SessionId={SessionId} | " +
                     "FromLocale={FromLocale} | ToLocale={ToLocale} | " +
                     "InputBytes={InputBytes} | OutputBytes={OutputBytes} | ElapsedMs={ElapsedMs} | OutputPath={OutputPath}",
-                    traceId, sessionId, options.FromLocale, options.ToLocale,
-                    csvFile.Length, outputStream.Length, (long)elapsed.TotalMilliseconds, outputPath);
+                    traceId, sessionId, SanitizeForLog(options.FromLocale), SanitizeForLog(options.ToLocale),
+                    csvFile.Length, outputStream.Length, (long)elapsed.TotalMilliseconds, SanitizeForLog(outputPath));
 
                 return RenderHomeIndex(model);
             }
@@ -155,7 +155,7 @@ namespace eurocsv.Controllers
 
             _logger.LogInformation(
                 "FileDownloaded | TraceId={TraceId} | SessionId={SessionId} | FileType=Original | Path={Path}",
-                HttpContext.TraceIdentifier, sessionId, path);
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId), SanitizeForLog(path));
 
             var fileName = Path.GetFileName(path);
             return PhysicalFile(path, "text/csv", fileName);
@@ -173,7 +173,7 @@ namespace eurocsv.Controllers
 
             _logger.LogInformation(
                 "FileDownloaded | TraceId={TraceId} | SessionId={SessionId} | FileType=Transformed | Path={Path}",
-                HttpContext.TraceIdentifier, sessionId, path);
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId), SanitizeForLog(path));
 
             var fileName = Path.GetFileName(path);
             return PhysicalFile(path, "text/csv", fileName);
@@ -188,13 +188,13 @@ namespace eurocsv.Controllers
 
             _logger.LogInformation(
                 "UserDeleteRequested | TraceId={TraceId} | SessionId={SessionId}",
-                HttpContext.TraceIdentifier, sessionId);
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId));
 
             _tempFileService.CleanupSession(sessionId);
 
             _logger.LogInformation(
                 "UserDeleteCompleted | TraceId={TraceId} | SessionId={SessionId}",
-                HttpContext.TraceIdentifier, sessionId);
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId));
 
             TempData["Message"] = "Your files have been securely deleted.";
             var homeUrl = Url.Action("Index", "Home") ?? "/";
@@ -216,5 +216,13 @@ namespace eurocsv.Controllers
             !string.IsNullOrEmpty(sessionId)
             && sessionId.Length == 32
             && sessionId.All(char.IsAsciiLetterOrDigit);
+
+        /// <summary>
+        /// Sanitizes a string for safe inclusion in log messages by replacing control
+        /// characters (CR, LF, TAB, etc.) that could be used for log-forging attacks.
+        /// </summary>
+        private static string SanitizeForLog(string? value) =>
+            string.IsNullOrEmpty(value) ? string.Empty
+                : value.Replace('\r', '_').Replace('\n', '_').Replace('\t', '_');
     }
 }

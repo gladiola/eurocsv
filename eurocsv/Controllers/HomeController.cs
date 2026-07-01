@@ -18,8 +18,8 @@ public class HomeController : Controller
         // Log the start of a user session.  We use the request TraceIdentifier as the
         // correlation key for this session since there is no authentication.
         var traceId = HttpContext.TraceIdentifier;
-        var userAgent = Request.Headers["User-Agent"].ToString();
-        var language = Request.Headers["Accept-Language"].ToString();
+        var userAgent = SanitizeForLog(Request.Headers["User-Agent"].ToString());
+        var language = SanitizeForLog(Request.Headers["Accept-Language"].ToString());
         _logger.LogInformation(
             "SessionStart | TraceId={TraceId} | UserAgent={UserAgent} | AcceptLanguage={AcceptLanguage}",
             traceId, userAgent, language);
@@ -42,4 +42,12 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+    /// <summary>
+    /// Sanitizes a string for safe inclusion in log messages by replacing control
+    /// characters (CR, LF, TAB, etc.) that could be used for log-forging attacks.
+    /// </summary>
+    private static string SanitizeForLog(string? value) =>
+        string.IsNullOrEmpty(value) ? string.Empty
+            : value.Replace('\r', '_').Replace('\n', '_').Replace('\t', '_');
 }

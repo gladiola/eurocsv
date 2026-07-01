@@ -118,12 +118,12 @@ namespace eurocsv.Services
                 {
                     _logger.LogInformation(
                         "UserDeleteFile | SessionId={SessionId} | FilePath={FilePath}",
-                        sessionId, file);
+                        SanitizeForLog(sessionId), SanitizeForLog(file));
                 }
                 Directory.Delete(sessionDir, recursive: true);
                 _logger.LogInformation(
                     "UserDeleteCompleted | SessionId={SessionId} | DirectoryDeleted={Directory}",
-                    sessionId, sessionDir);
+                    SanitizeForLog(sessionId), SanitizeForLog(sessionDir));
             }
         }
 
@@ -139,23 +139,24 @@ namespace eurocsv.Services
                     var created = Directory.GetCreationTimeUtc(dir);
                     if (created < cutoff)
                     {
+                        var sessionDirName = SanitizeForLog(Path.GetFileName(dir));
                         // Log each file being purged before deletion.
                         foreach (var file in Directory.EnumerateFiles(dir, "*", SearchOption.AllDirectories))
                         {
                             _logger.LogInformation(
                                 "PurgeDeleteFile | SessionDir={SessionDir} | FilePath={FilePath} | CreatedUtc={CreatedUtc}",
-                                Path.GetFileName(dir), file, created);
+                                sessionDirName, SanitizeForLog(file), created);
                         }
                         Directory.Delete(dir, recursive: true);
                         _logger.LogInformation(
                             "PurgeDeleteSession | SessionDir={SessionDir} | CreatedUtc={CreatedUtc} | AgeHours={AgeHours}",
-                            Path.GetFileName(dir), created,
+                            sessionDirName, created,
                             (DateTime.UtcNow - created).TotalHours.ToString("F1"));
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogWarning(ex, "PurgeFailed | SessionDir={SessionDir}", Path.GetFileName(dir));
+                    _logger.LogWarning(ex, "PurgeFailed | SessionDir={SessionDir}", SanitizeForLog(Path.GetFileName(dir)));
                 }
             }
         }
@@ -179,5 +180,13 @@ namespace eurocsv.Services
                 throw new ArgumentException("Invalid session ID.", nameof(sessionId));
             }
         }
+
+        /// <summary>
+        /// Sanitizes a string for safe inclusion in log messages by replacing control
+        /// characters (CR, LF, TAB, etc.) that could be used for log-forging attacks.
+        /// </summary>
+        private static string SanitizeForLog(string? value) =>
+            string.IsNullOrEmpty(value) ? string.Empty
+                : value.Replace('\r', '_').Replace('\n', '_').Replace('\t', '_');
     }
 }

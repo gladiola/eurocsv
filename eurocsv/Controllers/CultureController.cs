@@ -21,7 +21,7 @@ namespace eurocsv.Controllers
         {
             _logger.LogInformation(
                 "LanguageSelected | TraceId={TraceId} | Culture={Culture}",
-                HttpContext.TraceIdentifier, culture);
+                HttpContext.TraceIdentifier, SanitizeForLog(culture));
 
             Response.Cookies.Append(
                 CookieRequestCultureProvider.DefaultCookieName,
@@ -34,5 +34,13 @@ namespace eurocsv.Controllers
 
             return LocalRedirect(returnUrl);
         }
+
+        /// <summary>
+        /// Sanitizes a string for safe inclusion in log messages by replacing control
+        /// characters (CR, LF, TAB, etc.) that could be used for log-forging attacks.
+        /// </summary>
+        private static string SanitizeForLog(string? value) =>
+            string.IsNullOrEmpty(value) ? string.Empty
+                : value.Replace('\r', '_').Replace('\n', '_').Replace('\t', '_');
     }
 }
