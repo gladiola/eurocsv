@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Atdalītājs&lt;/strong&gt; — Lauku atdalīšanas simbols. Eiropas CSV faili parasti izmanto &lt;code&gt;;&lt;/code&gt;, angļu valodas &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimālatdalītājs&lt;/strong&gt; — Decimālskaitļu simbols. Vāciski: &lt;code&gt;1.234,56&lt;/code&gt; → Angliski: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tūkstošu atdalītājs&lt;/strong&gt; — Iespējojiet tikai tad, ja fails satur formatētus skaitļus.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Citēti lauki&lt;/strong&gt; — Lauki pēdiņās ir aizsargāti pret aizstāšanu.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privātums&lt;/strong&gt; — Faili tiek apstrādāti servera pusē un īslaicīgi glabāti. Izmantojiet pogu &lt;em&gt;Dzēst manus failus&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Privātuma politika</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV apņemas aizsargāt jūsu privātumu. Šajā lapā ir aprakstīts, kā mēs apstrādājam jūsu datus.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Failu apstrāde</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Augšupielādētie faili tiek glabāti pagaidu, sesijas specifiskā serverī esošā direktorijā.&lt;/li&gt;&lt;li&gt;Pagaidu faili tiek izmantoti tikai pieprasītās konversijas veikšanai un &lt;strong&gt;nekad netiek kopīgoti ar trešajām pusēm&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Pagaidu faili tiek automātiski dzēsti pēc maksimāli 2 stundām.&lt;/li&gt;&lt;li&gt;Jūs varat uzsākt failu tūlītēju dzēšanu jebkurā laikā, izmantojot konverterī esošo pogu &lt;strong&gt;Dzēst manus failus&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Pēc dzēšanas mēs neglabājam nevienu jūsu augšupielādēto vai konvertēto failu kopiju.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Sīkfaili</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Mēs izmantojam tikai minimālos sīkfailus, kas nepieciešami CSRF aizsardzībai. Šī lietotne neiestatītu personīgus izsekošanas sīkfailus.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Žurnāli</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standarta servera piekļuves žurnālus var glabāt drošības un darbības nolūkos. Šie žurnāli satur IP adreses un pieprasījumu metadatus, bet ne augšupielādēto failu saturu.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakti</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Privātuma jautājumu gadījumā, lūdzu, atveriet problēmu mūsų GitHub repozitorijā.</value>
+  </data>
 </root>

@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;分隔符&lt;/strong&gt; — 用于分隔字段的字符。欧洲CSV通常使用 &lt;code&gt;;&lt;/code&gt;，英文CSV使用 &lt;code&gt;,&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;小数分隔符&lt;/strong&gt; — 小数点字符。德语：&lt;code&gt;1.234,56&lt;/code&gt; → 英语：&lt;code&gt;1,234.56&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;千位分隔符&lt;/strong&gt; — 仅当文件包含格式化数字时才启用。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;带引号的字段&lt;/strong&gt; — 带引号的字段受保护，不会被替换。&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;隐私&lt;/strong&gt; — 文件在服务器端处理并临时存储。使用&lt;em&gt;删除我的文件&lt;/em&gt;按钮。&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>隐私政策</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV致力于保护您的隐私。本页面描述我们如何处理您的数据。</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>文件处理</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;您上传的文件存储在服务器上的临时会话特定目录中。&lt;/li&gt;&lt;li&gt;临时文件仅用于执行请求的转换，&lt;strong&gt;绝不与第三方共享&lt;/strong&gt;。&lt;/li&gt;&lt;li&gt;临时文件在最多2小时后自动清除。&lt;/li&gt;&lt;li&gt;您可以随时通过转换器中的&lt;strong&gt;删除我的文件&lt;/strong&gt;按钮立即删除文件。&lt;/li&gt;&lt;li&gt;删除后，我们不会保留任何上传或转换文件的副本。&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookie</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>我们仅使用CSRF保护所需的最少Cookie。本应用程序不设置个人追踪Cookie。</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>日志</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>标准服务器访问日志可能出于安全和运营目的而保留。这些日志包含IP地址和请求元数据，但不包含您上传文件的内容。</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>联系</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>如有隐私问题，请在我们的GitHub存储库中提交issue。</value>
+  </data>
 </root>

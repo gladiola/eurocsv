@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Разделител&lt;/strong&gt; — Знакът за разделяне на полета. Европейските CSV файлове обикновено използват &lt;code&gt;;&lt;/code&gt;, а английските — &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Десетичен разделител&lt;/strong&gt; — Знакът за десетични числа. Немски: &lt;code&gt;1.234,56&lt;/code&gt; → Английски: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Разделител на хиляди&lt;/strong&gt; — Активирайте само ако файлът съдържа форматирани числа.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Полета в кавички&lt;/strong&gt; — Полетата в кавички са защитени от замени.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Поверителност&lt;/strong&gt; — Файловете се обработват от страна на сървъра и се съхраняват временно. Използвайте бутона &lt;em&gt;Изтриване на файловете ми&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Политика за поверителност</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV се ангажира да защитава вашата поверителност. Тази страница описва как обработваме вашите данни.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Обработка на файлове</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Качените от вас файлове се съхраняват в временна, специфична за сесията директория на сървъра.&lt;/li&gt;&lt;li&gt;Временните файлове се използват само за извършване на исканото конвертиране и &lt;strong&gt;никога не се споделят с трети страни&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Временните файлове се изтриват автоматично след максимум 2 часа.&lt;/li&gt;&lt;li&gt;Можете да инициирате незабавно изтриване на вашите файлове по всяко време, като използвате бутона &lt;strong&gt;Изтрий моите файлове&lt;/strong&gt; в конвертора.&lt;/li&gt;&lt;li&gt;След изтриването не съхраняваме копия на качените или конвертирани файлове.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Бисквитки</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Използваме само минималните бисквитки, необходими за защита срещу подправяне (CSRF токени). Тази приложение не задава лични проследяващи бисквитки.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Регистрационни файлове</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Стандартните регистрационни файлове за достъп до сървъра могат да се съхраняват за цели на сигурността и работата. Тези регистрационни файлове съдържат IP адреси и метаданни на заявките, но не съдържат съдържанието на качените от вас файлове.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>За запитвания относно поверителността, моля отворете проблем в нашето хранилище GitHub.</value>
+  </data>
 </root>

@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;区切り文字&lt;/strong&gt; — フィールドを区切る文字。欧州のCSVは通常 &lt;code&gt;;&lt;/code&gt;、英語のCSVは &lt;code&gt;,&lt;/code&gt; を使用します。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;小数点区切り&lt;/strong&gt; — 小数点の文字。ドイツ語: &lt;code&gt;1.234,56&lt;/code&gt; → 英語: &lt;code&gt;1,234.56&lt;/code&gt;。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;桁区切り&lt;/strong&gt; — 書式付き数値を含む場合のみ有効にしてください。&lt;/p&gt;&lt;p&gt;&lt;strong&gt;引用符フィールド&lt;/strong&gt; — 引用符で囲まれたフィールドは置換から保護されます。&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;プライバシー&lt;/strong&gt; — ファイルはサーバー側で処理され、一時的に保存されます。&lt;em&gt;ファイルを削除&lt;/em&gt;ボタンをご利用ください。&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>プライバシーポリシー</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSVはお客様のプライバシー保護に取り組んでいます。このページでは、お客様のデータの取り扱い方法を説明します。</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>ファイルの取り扱い</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;アップロードされたファイルは、サーバー上のセッション固有の一時ディレクトリに保存されます。&lt;/li&gt;&lt;li&gt;一時ファイルは要求された変換を実行するためだけに使用され、&lt;strong&gt;第三者と共有されることはありません&lt;/strong&gt;。&lt;/li&gt;&lt;li&gt;一時ファイルは最大2時間後に自動的に削除されます。&lt;/li&gt;&lt;li&gt;コンバーターの&lt;strong&gt;ファイルを削除する&lt;/strong&gt;ボタンを使用することで、いつでも即座にファイルの削除を開始できます。&lt;/li&gt;&lt;li&gt;削除後は、アップロードまたは変換されたファイルのコピーは保持しません。&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>クッキー</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>CSRF保護に必要な最低限のクッキーのみを使用しています。このアプリケーションは個人追跡クッキーを設定しません。</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>ログ</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>標準のサーバーアクセスログは、セキュリティおよび運用目的で保持される場合があります。これらのログにはIPアドレスとリクエストのメタデータが含まれますが、アップロードされたファイルの内容は含まれません。</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>お問い合わせ</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>プライバシーに関するお問い合わせは、GitHubリポジトリにissueを開いてください。</value>
+  </data>
 </root>

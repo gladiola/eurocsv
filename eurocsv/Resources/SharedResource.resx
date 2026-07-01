@@ -233,4 +233,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Delimiter&lt;/strong&gt; — The character used to separate fields. German/European CSVs typically use &lt;code&gt;;&lt;/code&gt; while English CSVs use &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimal separator&lt;/strong&gt; — The character used for decimal points. German: &lt;code&gt;1.234,56&lt;/code&gt; → English: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Thousands separator&lt;/strong&gt; — Only enable this if your file contains formatted numbers with thousands separators.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Quoted fields&lt;/strong&gt; — Fields wrapped in quotes are protected from delimiter/separator substitution.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privacy&lt;/strong&gt; — Your files are processed server-side and stored temporarily. Use the &lt;em&gt;Delete My Files&lt;/em&gt; button to remove them immediately.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV is committed to protecting your privacy. This page describes how we handle your data.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>File Handling</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Files you upload are stored in a temporary, session-specific directory on the server.&lt;/li&gt;&lt;li&gt;Temporary files are used only to perform the requested conversion and are &lt;strong&gt;never shared with third parties&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Temporary files are automatically purged after a maximum of 2 hours.&lt;/li&gt;&lt;li&gt;You can initiate immediate deletion of your files at any time using the &lt;strong&gt;Delete My Files&lt;/strong&gt; button in the converter.&lt;/li&gt;&lt;li&gt;We do not retain any copies of your uploaded or converted files after deletion.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>We use minimal cookies required for anti-forgery protection (CSRF tokens). No personal tracking cookies are set by this application.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Logs</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standard server access logs may be retained for security and operational purposes. These logs contain IP addresses and request metadata but do not contain the contents of your uploaded files.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>For privacy inquiries, please open an issue on our GitHub repository.</value>
+  </data>
 </root>

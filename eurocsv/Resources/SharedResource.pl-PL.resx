@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Separator pól&lt;/strong&gt; — Znak oddzielający pola. Europejskie pliki CSV zazwyczaj używają &lt;code&gt;;&lt;/code&gt;, angielskie &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separator dziesiętny&lt;/strong&gt; — Znak dziesiętny. Niemcy: &lt;code&gt;1.234,56&lt;/code&gt; → Anglia: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separator tysięcy&lt;/strong&gt; — Włączaj tylko jeśli plik zawiera sformatowane liczby.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Pola w cudzysłowach&lt;/strong&gt; — Pola w cudzysłowach są chronione przed zastąpieniem.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Prywatność&lt;/strong&gt; — Pliki są przetwarzane po stronie serwera i tymczasowo przechowywane. Użyj przycisku &lt;em&gt;Usuń moje pliki&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Polityka prywatności</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV zobowiązuje się do ochrony Twojej prywatności. Ta strona opisuje, jak przetwarzamy Twoje dane.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Obsługa plików</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Przesłane pliki są przechowywane w tymczasowym, specyficznym dla sesji katalogu na serwerze.&lt;/li&gt;&lt;li&gt;Pliki tymczasowe są używane wyłącznie do wykonania żądanej konwersji i &lt;strong&gt;nigdy nie są udostępniane osobom trzecim&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Pliki tymczasowe są automatycznie usuwane po maksymalnie 2 godzinach.&lt;/li&gt;&lt;li&gt;Możesz w dowolnym momencie zainicjować natychmiastowe usunięcie swoich plików, używając przycisku &lt;strong&gt;Usuń moje pliki&lt;/strong&gt; w konwerterze.&lt;/li&gt;&lt;li&gt;Nie przechowujemy żadnych kopii przesłanych ani skonwertowanych plików po ich usunięciu.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Pliki cookie</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Używamy minimalnej liczby plików cookie wymaganych do ochrony przed atakami CSRF. Ta aplikacja nie ustawia osobistych plików cookie do śledzenia.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Dzienniki</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standardowe dzienniki dostępu do serwera mogą być przechowywane w celach bezpieczeństwa i operacyjnych. Dzienniki te zawierają adresy IP i metadane żądań, ale nie zawierają treści przesłanych plików.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>W przypadku zapytań dotyczących prywatności otwórz zgłoszenie w naszym repozytorium GitHub.</value>
+  </data>
 </root>

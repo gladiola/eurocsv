@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Oddeľovač&lt;/strong&gt; — Znak na oddelenie polí. Európske CSV súbory zvyčajne používajú &lt;code&gt;;&lt;/code&gt;, anglické &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Oddeľovač desatín&lt;/strong&gt; — Znak pre desatinné čísla. Nemčina: &lt;code&gt;1.234,56&lt;/code&gt; → Angličtina: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Oddeľovač tisícok&lt;/strong&gt; — Aktivujte len ak súbor obsahuje formátované čísla.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Polia v úvodzovkách&lt;/strong&gt; — Polia v úvodzovkách sú chránené pred substitúciou.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Súkromie&lt;/strong&gt; — Súbory sú spracované na serveri a dočasne uložené. Použite tlačidlo &lt;em&gt;Odstrániť moje súbory&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Zásady ochrany súkromia</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV sa zaväzuje chrániť vaše súkromie. Táto stránka popisuje, ako nakladáme s vašimi údajmi.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Spracovanie súborov</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Nahrané súbory sú uložené v dočasnom adresári špecifickom pre reláciu na serveri.&lt;/li&gt;&lt;li&gt;Dočasné súbory sa používajú výhradne na vykonanie požadovanej konverzie a &lt;strong&gt;nikdy nie sú zdieľané s tretími stranami&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Dočasné súbory sú automaticky odstránené po maximálne 2 hodinách.&lt;/li&gt;&lt;li&gt;Okamžité vymazanie súborov môžete kedykoľvek iniciovať pomocou tlačidla &lt;strong&gt;Odstrániť moje súbory&lt;/strong&gt; v konvertore.&lt;/li&gt;&lt;li&gt;Po vymazaní neuchovávame žiadne kópie vašich nahraných ani konvertovaných súborov.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Súbory cookie</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Používame iba súbory cookie potrebné na ochranu proti falšovaniu (CSRF tokeny). Táto aplikácia nenastavuje žiadne osobné sledovacie súbory cookie.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Protokoly</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Štandardné protokoly prístupu na server môžu byť uchovávané z bezpečnostných a prevádzkových dôvodov. Tieto protokoly obsahujú IP adresy a metadáta požiadaviek, ale neobsahujú obsah vašich nahraných súborov.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>V prípade otázok týkajúcich sa ochrany súkromia otvorte prosím issue v našom repozitári GitHub.</value>
+  </data>
 </root>

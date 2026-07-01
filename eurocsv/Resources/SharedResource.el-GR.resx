@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Διαχωριστής&lt;/strong&gt; — Ο χαρακτήρας διαχωρισμού πεδίων. Τα ευρωπαϊκά CSV χρησιμοποιούν &lt;code&gt;;&lt;/code&gt;, τα αγγλικά &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Δεκαδικός διαχωριστής&lt;/strong&gt; — Ο χαρακτήρας για δεκαδικούς. Γερμανικά: &lt;code&gt;1.234,56&lt;/code&gt; → Αγγλικά: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Διαχωριστής χιλιάδων&lt;/strong&gt; — Ενεργοποιήστε μόνο αν το αρχείο περιέχει μορφοποιημένους αριθμούς.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Πεδία σε εισαγωγικά&lt;/strong&gt; — Τα πεδία σε εισαγωγικά προστατεύονται από αντικαταστάσεις.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Απόρρητο&lt;/strong&gt; — Τα αρχεία επεξεργάζονται στον διακομιστή και αποθηκεύονται προσωρινά. Χρησιμοποιήστε το κουμπί &lt;em&gt;Διαγραφή αρχείων&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Πολιτική Απορρήτου</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>Η EuroCSV δεσμεύεται να προστατεύει το απόρρητό σας. Αυτή η σελίδα περιγράφει τον τρόπο με τον οποίο χειριζόμαστε τα δεδομένα σας.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Χειρισμός Αρχείων</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Τα αρχεία που ανεβάζετε αποθηκεύονται σε έναν προσωρινό, ειδικό για την περίοδο λειτουργίας κατάλογο στον διακομιστή.&lt;/li&gt;&lt;li&gt;Τα προσωρινά αρχεία χρησιμοποιούνται μόνο για την εκτέλεση της ζητηθείσας μετατροπής και &lt;strong&gt;δεν κοινοποιούνται ποτέ σε τρίτους&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Τα προσωρινά αρχεία διαγράφονται αυτόματα μετά από μέγιστο 2 ώρες.&lt;/li&gt;&lt;li&gt;Μπορείτε να ξεκινήσετε άμεση διαγραφή των αρχείων σας οποτεδήποτε χρησιμοποιώντας το κουμπί &lt;strong&gt;Διαγραφή των αρχείων μου&lt;/strong&gt; στον μετατροπέα.&lt;/li&gt;&lt;li&gt;Δεν διατηρούμε αντίγραφα των αρχείων που ανεβάσατε ή μετατράπηκαν μετά τη διαγραφή.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Χρησιμοποιούμε ελάχιστα cookies που απαιτούνται για την προστασία κατά της πλαστογραφίας (CSRF tokens). Δεν ορίζονται από αυτήν την εφαρμογή προσωπικά cookies παρακολούθησης.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Αρχεία καταγραφής</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Τα τυπικά αρχεία καταγραφής πρόσβασης στον διακομιστή ενδέχεται να διατηρηθούν για σκοπούς ασφάλειας και λειτουργίας. Αυτά τα αρχεία περιέχουν διευθύνσεις IP και μεταδεδομένα αιτημάτων, αλλά δεν περιέχουν το περιεχόμενο των αρχείων που ανεβάσατε.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Επικοινωνία</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Για ερωτήματα σχετικά με το απόρρητο, ανοίξτε ένα issue στο αποθετήριο GitHub μας.</value>
+  </data>
 </root>

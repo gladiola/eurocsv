@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Delimitator&lt;/strong&gt; — Caracterul separator de câmpuri. CSV-urile europene folosesc de obicei &lt;code&gt;;&lt;/code&gt;, cele englezești &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separator zecimal&lt;/strong&gt; — Caracterul zecimal. Germană: &lt;code&gt;1.234,56&lt;/code&gt; → Engleză: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separator de mii&lt;/strong&gt; — Activați doar dacă fișierul conține numere formatate.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Câmpuri între ghilimele&lt;/strong&gt; — Câmpurile între ghilimele sunt protejate de substituiri.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Confidențialitate&lt;/strong&gt; — Fișierele sunt procesate pe server și stocate temporar. Folosiți butonul &lt;em&gt;Șterge fișierele mele&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Politică de confidențialitate</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV se angajează să vă protejeze confidențialitatea. Această pagină descrie modul în care gestionăm datele dumneavoastră.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Gestionarea fișierelor</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Fișierele pe care le încărcați sunt stocate într-un director temporar, specific sesiunii, pe server.&lt;/li&gt;&lt;li&gt;Fișierele temporare sunt utilizate exclusiv pentru a efectua conversia solicitată și &lt;strong&gt;nu sunt niciodată partajate cu terți&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Fișierele temporare sunt șterse automat după maximum 2 ore.&lt;/li&gt;&lt;li&gt;Puteți iniția ștergerea imediată a fișierelor dumneavoastră în orice moment folosind butonul &lt;strong&gt;Șterge fișierele mele&lt;/strong&gt; din convertor.&lt;/li&gt;&lt;li&gt;Nu păstrăm nicio copie a fișierelor dumneavoastră încărcate sau convertite după ștergere.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookie-uri</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Folosim doar cookie-urile minime necesare pentru protecția anti-falsificare (token-uri CSRF). Nicio cookie de urmărire personală nu este setată de această aplicație.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Jurnale</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Jurnalele standard de acces la server pot fi reținute în scopuri de securitate și operaționale. Aceste jurnale conțin adrese IP și metadate ale cererilor, dar nu conțin conținutul fișierelor dumneavoastră încărcate.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Pentru întrebări privind confidențialitatea, vă rugăm să deschideți un issue în depozitul nostru GitHub.</value>
+  </data>
 </root>

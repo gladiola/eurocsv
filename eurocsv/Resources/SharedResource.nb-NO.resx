@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Skilletegn&lt;/strong&gt; — Tegnet som skiller felt. Europeiske CSV-filer bruker vanligvis &lt;code&gt;;&lt;/code&gt;, engelske &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Desimaltegn&lt;/strong&gt; — Tegnet for desimaler. Tysk: &lt;code&gt;1.234,56&lt;/code&gt; → Engelsk: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tusentegn&lt;/strong&gt; — Aktiver bare hvis filen inneholder formaterte tall.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Siterte felt&lt;/strong&gt; — Felt i anførselstegn beskyttes mot erstatninger.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Personvern&lt;/strong&gt; — Filene behandles server-side og lagres midlertidig. Bruk knappen &lt;em&gt;Slett filene mine&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Personvernpolicy</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV er forpliktet til å beskytte ditt personvern. Denne siden beskriver hvordan vi håndterer dine data.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Filhåndtering</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Filer du laster opp, lagres i en midlertidig, øktspesifikk mappe på serveren.&lt;/li&gt;&lt;li&gt;Midlertidige filer brukes kun til å utføre den ønskede konverteringen og &lt;strong&gt;deles aldri med tredjeparter&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Midlertidige filer slettes automatisk etter maksimalt 2 timer.&lt;/li&gt;&lt;li&gt;Du kan når som helst starte umiddelbar sletting av filene dine ved hjelp av knappen &lt;strong&gt;Slett mine filer&lt;/strong&gt; i konverteren.&lt;/li&gt;&lt;li&gt;Vi oppbevarer ingen kopier av dine opplastede eller konverterte filer etter sletting.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Informasjonskapsler</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Vi bruker minimale informasjonskapsler som kreves for anti-forfalskning (CSRF-tokens). Ingen personlige sporingsinformasjonskapsler settes av denne applikasjonen.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Logger</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standard serveradgangslogger kan beholdes av sikkerhets- og driftsmessige årsaker. Disse loggene inneholder IP-adresser og forespørselsmetadata, men ikke innholdet i dine opplastede filer.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>For personvernhenvendelser, vennligst åpne et problem i vårt GitHub-lager.</value>
+  </data>
 </root>

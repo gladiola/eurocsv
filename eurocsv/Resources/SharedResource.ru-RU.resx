@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Разделитель&lt;/strong&gt; — Символ для разделения полей. Европейские CSV-файлы обычно используют &lt;code&gt;;&lt;/code&gt;, а английские — &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Разделитель десятичных&lt;/strong&gt; — Символ для десятичных чисел. Немецкий: &lt;code&gt;1.234,56&lt;/code&gt; → Английский: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Разделитель тысяч&lt;/strong&gt; — Включайте только если файл содержит числа с форматированием.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Поля в кавычках&lt;/strong&gt; — Поля в кавычках защищены от замен.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Конфиденциальность&lt;/strong&gt; — Файлы обрабатываются на сервере и хранятся временно. Используйте кнопку &lt;em&gt;Удалить мои файлы&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Политика конфиденциальности</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV стремится защищать вашу конфиденциальность. Эта страница описывает, как мы обрабатываем ваши данные.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Обработка файлов</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Загруженные файлы хранятся во временной директории, специфичной для сеанса, на сервере.&lt;/li&gt;&lt;li&gt;Временные файлы используются исключительно для выполнения запрошенного преобразования и &lt;strong&gt;никогда не передаются третьим лицам&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Временные файлы автоматически удаляются максимум через 2 часа.&lt;/li&gt;&lt;li&gt;Вы можете инициировать немедленное удаление файлов в любое время, используя кнопку &lt;strong&gt;Удалить мои файлы&lt;/strong&gt; в конвертере.&lt;/li&gt;&lt;li&gt;После удаления мы не храним никаких копий ваших загруженных или преобразованных файлов.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Файлы cookie</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Мы используем только файлы cookie, необходимые для защиты от CSRF-атак. Данное приложение не устанавливает персональные отслеживающие файлы cookie.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Журналы</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Стандартные журналы доступа к серверу могут храниться в целях безопасности и эксплуатации. Эти журналы содержат IP-адреса и метаданные запросов, но не содержат содержимого загруженных файлов.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Контакт</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>По вопросам конфиденциальности, пожалуйста, откройте issue в нашем репозитории GitHub.</value>
+  </data>
 </root>

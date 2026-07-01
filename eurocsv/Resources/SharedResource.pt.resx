@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Delimitador&lt;/strong&gt; — O caractere separador. CSVs europeus usam &lt;code&gt;;&lt;/code&gt;, os ingleses &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separador decimal&lt;/strong&gt; — O caractere decimal. Alemão: &lt;code&gt;1.234,56&lt;/code&gt; → Inglês: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Separador de milhares&lt;/strong&gt; — Ativar apenas se o ficheiro contiver números formatados.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Campos entre aspas&lt;/strong&gt; — Campos entre aspas são protegidos de substituições.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privacidade&lt;/strong&gt; — Os ficheiros são processados no servidor e armazenados temporariamente. Use o botão &lt;em&gt;Eliminar os meus ficheiros&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Política de privacidade</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>A EuroCSV está comprometida com a proteção da sua privacidade. Esta página descreve como tratamos os seus dados.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Gestão de ficheiros</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Os ficheiros que carrega são armazenados num diretório temporário específico da sessão no servidor.&lt;/li&gt;&lt;li&gt;Os ficheiros temporários são utilizados apenas para realizar a conversão solicitada e &lt;strong&gt;nunca são partilhados com terceiros&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Os ficheiros temporários são automaticamente eliminados após um máximo de 2 horas.&lt;/li&gt;&lt;li&gt;Pode iniciar a eliminação imediata dos seus ficheiros a qualquer momento usando o botão &lt;strong&gt;Eliminar os meus ficheiros&lt;/strong&gt; no conversor.&lt;/li&gt;&lt;li&gt;Não conservamos quaisquer cópias dos seus ficheiros carregados ou convertidos após a eliminação.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Utilizamos apenas os cookies mínimos necessários para proteção anti-falsificação (tokens CSRF). Esta aplicação não define cookies de rastreio pessoal.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Registos</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Os registos de acesso padrão do servidor podem ser conservados para fins de segurança e operacionais. Estes registos contêm endereços IP e metadados de pedidos, mas não o conteúdo dos seus ficheiros carregados.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Para questões de privacidade, abra um problema no nosso repositório do GitHub.</value>
+  </data>
 </root>

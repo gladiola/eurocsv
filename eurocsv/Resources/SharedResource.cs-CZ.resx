@@ -227,4 +227,34 @@
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Oddělovač&lt;/strong&gt; — Znak pro oddělení polí. Evropské CSV soubory zpravidla používají &lt;code&gt;;&lt;/code&gt;, anglické &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Oddělovač desetin&lt;/strong&gt; — Znak pro desetinná čísla. Němčina: &lt;code&gt;1.234,56&lt;/code&gt; → Angličtina: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Oddělovač tisíců&lt;/strong&gt; — Aktivujte pouze pokud soubor obsahuje formátovaná čísla.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Pole v uvozovkách&lt;/strong&gt; — Pole v uvozovkách jsou chráněna před substitucí.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Soukromí&lt;/strong&gt; — Soubory jsou zpracovány na serveru a dočasně uloženy. Použijte tlačítko &lt;em&gt;Smazat moje soubory&lt;/em&gt;.&lt;/p&gt;</value>
   </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Zásady ochrany osobních údajů</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV se zavazuje chránit vaše soukromí. Tato stránka popisuje, jak nakládáme s vašimi daty.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Zpracování souborů</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Nahrané soubory jsou uloženy v dočasném adresáři specifickém pro relaci na serveru.&lt;/li&gt;&lt;li&gt;Dočasné soubory jsou použity výhradně k provedení požadované konverze a &lt;strong&gt;nikdy nejsou sdíleny s třetími stranami&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Dočasné soubory jsou automaticky smazány po maximálně 2 hodinách.&lt;/li&gt;&lt;li&gt;Okamžité smazání souborů můžete kdykoli iniciovat pomocí tlačítka &lt;strong&gt;Smazat moje soubory&lt;/strong&gt; v převodníku.&lt;/li&gt;&lt;li&gt;Po smazání si neuchováváme žádné kopie vašich nahraných ani převedených souborů.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Soubory cookie</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Používáme pouze soubory cookie nezbytné pro ochranu proti padělání (CSRF tokeny). Tato aplikace nenastavuje žádné osobní sledovací soubory cookie.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Protokoly</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standardní protokoly přístupu na server mohou být uchovávány z bezpečnostních a provozních důvodů. Tyto protokoly obsahují IP adresy a metadata požadavků, ale neobsahují obsah vašich nahraných souborů.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>V případě dotazů týkajících se ochrany soukromí otevřete prosím issue v našem repozitáři GitHub.</value>
+  </data>
 </root>
