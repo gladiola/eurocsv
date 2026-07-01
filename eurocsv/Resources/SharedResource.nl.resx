@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Geciteerde velden respecteren</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Voorkomt dat scheidingstekens en separatoren binnen geciteerde waarden worden geconverteerd alsof het echte kolomscheidingen of getallen zijn.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Regeleinden converteren</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Aangepaste overschrijving (leeg laten voor landinstellingen)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Gebruik deze velden alleen wanneer het bestand niet overeenkomt met de geselecteerde landinstellingen en u de gedetecteerde scheidingstekens of separatoren handmatig moet overschrijven.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Van scheidingsteken</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Scheidingsteken&lt;/strong&gt; — Het teken voor veldscheiding. Europese CSV-bestanden gebruiken &lt;code&gt;;&lt;/code&gt;, Engelse &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimaalteken&lt;/strong&gt; — Het decimaalteken. Duits: &lt;code&gt;1.234,56&lt;/code&gt; → Engels: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Duizendtalteken&lt;/strong&gt; — Alleen inschakelen als het bestand opgemaakte getallen bevat.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Geciteerde velden&lt;/strong&gt; — Velden tussen aanhalingstekens worden beschermd.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privacy&lt;/strong&gt; — Bestanden worden server-side verwerkt en tijdelijk opgeslagen. Gebruik de knop &lt;em&gt;Mijn bestanden verwijderen&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Privacybeleid</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV is toegewijd aan het beschermen van uw privacy. Deze pagina beschrijft hoe we uw gegevens verwerken.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Bestandsverwerking</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Geüploade bestanden worden opgeslagen in een tijdelijke, sessiespecifieke map op de server.&lt;/li&gt;&lt;li&gt;Tijdelijke bestanden worden uitsluitend gebruikt voor de aangevraagde conversie en worden &lt;strong&gt;nooit gedeeld met derden&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Tijdelijke bestanden worden na maximaal 2 uur automatisch verwijderd.&lt;/li&gt;&lt;li&gt;U kunt uw bestanden op elk moment direct verwijderen via de knop &lt;strong&gt;Mijn bestanden verwijderen&lt;/strong&gt; in de converter.&lt;/li&gt;&lt;li&gt;Na verwijdering bewaren wij geen kopieën van uw geüploade of geconverteerde bestanden.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>We gebruiken alleen de cookies die nodig zijn voor anti-vervalsingsbeveiliging (CSRF-tokens). Er worden geen persoonlijke tracking-cookies ingesteld door deze applicatie.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Logboeken</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standaard serverlogboeken kunnen worden bewaard voor beveiligings- en operationele doeleinden. Deze logboeken bevatten IP-adressen en verzoekmetagegevens, maar niet de inhoud van uw geüploade bestanden.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Voor privacyvragen kunt u een probleem openen in onze GitHub-repository.</value>
   </data>
 </root>

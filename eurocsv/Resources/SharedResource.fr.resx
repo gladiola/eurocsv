@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respecter les champs entre guillemets</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Empêche que les délimiteurs et séparateurs à l'intérieur des valeurs entre guillemets soient convertis comme s'ils étaient de vraies séparations de colonnes ou des nombres.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Convertir les fins de ligne</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Remplacement personnalisé (laisser vide pour utiliser le préréglage régional)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Utilisez ces champs uniquement lorsque le fichier ne correspond pas aux préréglages régionaux sélectionnés et que vous devez remplacer manuellement les délimiteurs ou séparateurs détectés.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Délimiteur source</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Délimiteur&lt;/strong&gt; — Le caractère séparateur. Les CSV européens utilisent généralement &lt;code&gt;;&lt;/code&gt; et les CSV anglais &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Séparateur décimal&lt;/strong&gt; — Le caractère décimal. Français : &lt;code&gt;1.234,56&lt;/code&gt; → Anglais : &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Séparateur des milliers&lt;/strong&gt; — À activer uniquement si le fichier contient des nombres formatés.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Champs entre guillemets&lt;/strong&gt; — Les champs entre guillemets sont protégés des substitutions.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Confidentialité&lt;/strong&gt; — Vos fichiers sont traités côté serveur et stockés temporairement. Utilisez le bouton &lt;em&gt;Supprimer mes fichiers&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Politique de confidentialité</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV s'engage à protéger votre vie privée. Cette page décrit comment nous traitons vos données.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Gestion des fichiers</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Les fichiers que vous téléchargez sont stockés dans un répertoire temporaire spécifique à la session sur le serveur.&lt;/li&gt;&lt;li&gt;Les fichiers temporaires sont utilisés uniquement pour effectuer la conversion demandée et ne sont &lt;strong&gt;jamais partagés avec des tiers&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Les fichiers temporaires sont automatiquement supprimés après un maximum de 2 heures.&lt;/li&gt;&lt;li&gt;Vous pouvez initier la suppression immédiate de vos fichiers à tout moment en utilisant le bouton &lt;strong&gt;Supprimer mes fichiers&lt;/strong&gt; dans le convertisseur.&lt;/li&gt;&lt;li&gt;Nous ne conservons aucune copie de vos fichiers téléchargés ou convertis après suppression.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Nous utilisons uniquement les cookies nécessaires à la protection anti-contrefaçon (tokens CSRF). Aucun cookie de traçage personnel n'est défini par cette application.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Journaux</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Les journaux d'accès standard du serveur peuvent être conservés à des fins de sécurité et d'exploitation. Ces journaux contiennent des adresses IP et des métadonnées de requêtes, mais pas le contenu de vos fichiers téléchargés.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Pour toute demande relative à la confidentialité, veuillez ouvrir un ticket sur notre dépôt GitHub.</value>
   </data>
 </root>

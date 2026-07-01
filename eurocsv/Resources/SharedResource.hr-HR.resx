@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Poštivanje polja u navodnicima</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Sprječava da se razdjelnici i separatori unutar navodnika konvertiraju kao da su stvarni prijelomi stupaca ili brojevi.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Pretvori završetke redaka</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Prilagođeno nadjačavanje (ostavite prazno za regionalnu pretpostavku)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Koristite ova polja samo kada datoteka ne odgovara odabranim regionalnim prepostavkama i trebate ručno zamijeniti otkrivene razdjelniki ili separatore.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Izvorni razdjelnik</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Razdvojnik&lt;/strong&gt; — Znak za razdvajanje polja. Europski CSV-ovi obično koriste &lt;code&gt;;&lt;/code&gt;, engleski &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimalni razdvojnik&lt;/strong&gt; — Znak za decimale. Njemački: &lt;code&gt;1.234,56&lt;/code&gt; → Engleski: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Razdvojnik tisućica&lt;/strong&gt; — Aktivirajte samo ako datoteka sadrži formatirane brojeve.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Polja u navodnicima&lt;/strong&gt; — Polja u navodnicima zaštićena su od zamjena.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privatnost&lt;/strong&gt; — Datoteke se obrađuju na poslužitelju i privremeno pohranjuju. Koristite gumb &lt;em&gt;Izbriši moje datoteke&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Pravila o privatnosti</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV se obvezuje štititi vašu privatnost. Ova stranica opisuje kako upravljamo vašim podacima.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Upravljanje datotekama</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Datoteke koje učitate pohranjuju se u privremeni, specifični direktorij za sesiju na poslužitelju.&lt;/li&gt;&lt;li&gt;Privremene datoteke koriste se isključivo za izvođenje tražene konverzije i &lt;strong&gt;nikada se ne dijele s trećim stranama&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Privremene datoteke automatski se brišu nakon najviše 2 sata.&lt;/li&gt;&lt;li&gt;Možete pokrenuti trenutno brisanje datoteka u bilo koje vrijeme pomoću gumba &lt;strong&gt;Izbriši moje datoteke&lt;/strong&gt; u konverteru.&lt;/li&gt;&lt;li&gt;Nakon brisanja ne čuvamo nikakve kopije vaših učitanih ili konvertiranih datoteka.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Kolačići</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Koristimo minimalne kolačiće potrebne za zaštitu od krivotvorenja (CSRF tokeni). Ova aplikacija ne postavlja osobne kolačiće za praćenje.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Evidencije</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standardne evidencije pristupa poslužitelju mogu se čuvati u svrhe sigurnosti i rada. Te evidencije sadrže IP adrese i metapodatke zahtjeva, ali ne sadrže sadržaj vaših učitanih datoteka.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Za upite o privatnosti, otvorite issue u našem GitHub repozitoriju.</value>
   </data>
 </root>

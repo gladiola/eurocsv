@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respekter citerede felter</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Forhindrer, at skilletegn og separatorer inden for citerede værdier konverteres, som om de var rigtige kolonneafbrydelser eller tal.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konverter linjeafslutninger</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Brugerdefineret tilsidesættelse (lad stå tomt for at bruge lokalforudindstilling)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Brug disse felter kun, når filen ikke matcher de valgte lokalitetsforudindstillinger, og du skal tilsidesætte de registrerede skilletegn eller separatorer manuelt.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Kildeafgrænser</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Skilletegn&lt;/strong&gt; — Tegnet der adskiller felter. Europæiske CSV-filer bruger typisk &lt;code&gt;;&lt;/code&gt;, engelske &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Decimaltegn&lt;/strong&gt; — Tegnet for decimaler. Tysk: &lt;code&gt;1.234,56&lt;/code&gt; → Engelsk: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tusindtalstegn&lt;/strong&gt; — Aktivér kun hvis filen indeholder formaterede tal.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Citerede felter&lt;/strong&gt; — Felter i citationstegn beskyttes mod erstatninger.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privatliv&lt;/strong&gt; — Dine filer behandles server-side og gemmes midlertidigt. Brug knappen &lt;em&gt;Slet mine filer&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Privatlivspolitik</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV er forpligtet til at beskytte dit privatliv. Denne side beskriver, hvordan vi håndterer dine data.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Filhåndtering</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Filer, du uploader, gemmes i en midlertidig, sessionsspecifik mappe på serveren.&lt;/li&gt;&lt;li&gt;Midlertidige filer bruges kun til at udføre den ønskede konvertering og &lt;strong&gt;deles aldrig med tredjeparter&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Midlertidige filer slettes automatisk efter maksimalt 2 timer.&lt;/li&gt;&lt;li&gt;Du kan til enhver tid starte øjeblikkelig sletning af dine filer ved hjælp af knappen &lt;strong&gt;Slet mine filer&lt;/strong&gt; i konverteren.&lt;/li&gt;&lt;li&gt;Vi opbevarer ingen kopier af dine uploadede eller konverterede filer efter sletning.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Vi bruger minimale cookies, der er nødvendige for anti-forfalskning (CSRF-tokens). Ingen personlige sporingscookies sættes af denne applikation.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Logfiler</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standard serveradgangslogfiler kan opbevares af sikkerheds- og driftsmæssige årsager. Disse logfiler indeholder IP-adresser og anmodningsmetadata, men ikke indholdet af dine uploadede filer.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>For privatlivsforespørgsler, bedes du åbne et problem i vores GitHub-repository.</value>
   </data>
 </root>

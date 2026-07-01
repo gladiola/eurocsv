@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Anführungsfelder beachten</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Verhindert, dass Trennzeichen und Separatoren innerhalb von Anführungszeichen als echte Spaltentrennungen oder Zahlen behandelt werden.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Zeilenenden konvertieren</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Benutzerdefinierte Überschreibung (leer lassen für Gebietsschema-Voreinstellung)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Verwenden Sie diese Felder nur, wenn die Datei nicht den ausgewählten Gebietsschema-Voreinstellungen entspricht und Sie die erkannten Trennzeichen oder Separatoren manuell überschreiben müssen.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Von Trennzeichen</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Trennzeichen&lt;/strong&gt; — Das Zeichen zur Feldtrennung. Deutsche/europäische CSV-Dateien verwenden meist &lt;code&gt;;&lt;/code&gt;, englische &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Dezimaltrennzeichen&lt;/strong&gt; — Das Zeichen für Dezimalstellen. Deutsch: &lt;code&gt;1.234,56&lt;/code&gt; → Englisch: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tausendertrennzeichen&lt;/strong&gt; — Nur aktivieren, wenn die Datei formatierte Zahlen enthält.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Felder in Anführungszeichen&lt;/strong&gt; — Anführungszeichen schützen Felder vor Ersetzungen.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Datenschutz&lt;/strong&gt; — Dateien werden serverseitig verarbeitet und vorübergehend gespeichert. Verwenden Sie die Schaltfläche &lt;em&gt;Dateien löschen&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Datenschutz</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV verpflichtet sich zum Schutz Ihrer Privatsphäre. Diese Seite beschreibt, wie wir Ihre Daten verarbeiten.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Dateiverarbeitung</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Hochgeladene Dateien werden in einem temporären, sitzungsspezifischen Verzeichnis auf dem Server gespeichert.&lt;/li&gt;&lt;li&gt;Temporäre Dateien werden ausschließlich für die angeforderte Konvertierung verwendet und &lt;strong&gt;nie an Dritte weitergegeben&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Temporäre Dateien werden nach maximal 2 Stunden automatisch gelöscht.&lt;/li&gt;&lt;li&gt;Sie können Ihre Dateien jederzeit sofort löschen, indem Sie die Schaltfläche &lt;strong&gt;Meine Dateien löschen&lt;/strong&gt; im Konverter verwenden.&lt;/li&gt;&lt;li&gt;Nach der Löschung werden keinerlei Kopien Ihrer hochgeladenen oder konvertierten Dateien gespeichert.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Cookies</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Wir verwenden nur die für den CSRF-Schutz erforderlichen Cookies. Keine persönlichen Tracking-Cookies werden von dieser Anwendung gesetzt.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Protokolle</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standardmäßige Serverzugriffsprotokolle können aus Sicherheits- und Betriebsgründen gespeichert werden. Diese Protokolle enthalten IP-Adressen und Anforderungsmetadaten, jedoch nicht den Inhalt Ihrer hochgeladenen Dateien.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Bei Datenschutzanfragen öffnen Sie bitte ein Issue in unserem GitHub-Repository.</value>
   </data>
 </root>

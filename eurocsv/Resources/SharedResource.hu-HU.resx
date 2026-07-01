@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Idézett mezők tiszteletben tartása</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Megakadályozza, hogy az idézett értékeken belüli elválasztók és szeparátorok valódi oszloptörésként vagy számként kerüljenek konvertálásra.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Soremelések konvertálása</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Egyéni felülírás (hagyja üresen a területi előbeállítás használatához)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Ezeket a mezőket csak akkor használja, ha a fájl nem egyezik a kiválasztott területi előbeállításokkal, és manuálisan kell felülírnia a felismert elválasztókat vagy szeparátorokat.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Forrás elválasztó</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Elválasztó&lt;/strong&gt; — A mezőket elválasztó karakter. Az európai CSV-fájlok általában &lt;code&gt;;&lt;/code&gt;-t, az angolok &lt;code&gt;,&lt;/code&gt;-t használnak.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tizedes elválasztó&lt;/strong&gt; — A tizedes jel. Német: &lt;code&gt;1.234,56&lt;/code&gt; → Angol: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ezres elválasztó&lt;/strong&gt; — Csak akkor engedélyezze, ha a fájl formázott számokat tartalmaz.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Idézett mezők&lt;/strong&gt; — Az idézőjeles mezők védve vannak a helyettesítésektől.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Adatvédelem&lt;/strong&gt; — A fájlok szerveren kerülnek feldolgozásra és ideiglenesen tárolódnak. Használja a &lt;em&gt;Saját fájlok törlése&lt;/em&gt; gombot.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Adatvédelmi irányelvek</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>Az EuroCSV elkötelezett az Ön adatainak védelme iránt. Ez az oldal leírja, hogyan kezeljük az Ön adatait.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Fájlkezelés</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;A feltöltött fájlok ideiglenes, munkamenet-specifikus könyvtárban tárolódnak a szerveren.&lt;/li&gt;&lt;li&gt;Az ideiglenes fájlokat kizárólag a kért konvertálás elvégzéséhez használják, és &lt;strong&gt;soha nem osztják meg harmadik felekkel&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Az ideiglenes fájlokat legfeljebb 2 óra elteltével automatikusan törlik.&lt;/li&gt;&lt;li&gt;Bármikor kezdeményezheti fájljai azonnali törlését a konverterben lévő &lt;strong&gt;Saját fájlok törlése&lt;/strong&gt; gomb segítségével.&lt;/li&gt;&lt;li&gt;A törlés után nem őrzünk meg másolatokat a feltöltött vagy konvertált fájlokról.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Sütik</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Csak a hamisítás elleni védelemhez szükséges minimális sütiket (CSRF-tokenek) használjuk. Ez az alkalmazás nem állít be személyes nyomkövetési sütiket.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Naplók</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>A szerver szabványos hozzáférési naplói biztonsági és üzemeltetési célból megőrizhetők. Ezek a naplók IP-címeket és kéréssel kapcsolatos metaadatokat tartalmaznak, de nem tartalmazzák a feltöltött fájlok tartalmát.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kapcsolat</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Adatvédelmi kérdésekkel kapcsolatban nyisson egy hibajegyet GitHub-adattárunkban.</value>
   </data>
 </root>

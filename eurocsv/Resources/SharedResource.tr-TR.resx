@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Alıntılanan alanları dikkate al</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Tırnak içindeki değerlerdeki sınırlayıcıların ve ayırıcıların gerçek sütun sonları veya sayılar gibi dönüştürülmesini engeller.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Satır sonlarını dönüştür</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Özel geçersiz kılma (yerel ön ayarı kullanmak için boş bırakın)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Bu alanları yalnızca dosya seçili yerel ön ayarlarla eşleşmediğinde ve algılanan sınırlayıcıları veya ayırıcıları manuel olarak geçersiz kılmanız gerektiğinde kullanın.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Kaynak sınırlayıcı</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Sınırlayıcı&lt;/strong&gt; — Alan ayırma karakteri. Avrupa CSV dosyaları genellikle &lt;code&gt;;&lt;/code&gt;, İngilizce olanlar &lt;code&gt;,&lt;/code&gt; kullanır.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Ondalık ayırıcı&lt;/strong&gt; — Ondalık karakter. Almanca: &lt;code&gt;1.234,56&lt;/code&gt; → İngilizce: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Binlik ayırıcı&lt;/strong&gt; — Yalnızca dosya biçimlendirilmiş sayılar içeriyorsa etkinleştirin.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tırnaklı alanlar&lt;/strong&gt; — Tırnak içindeki alanlar değiştirimden korunur.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Gizlilik&lt;/strong&gt; — Dosyalar sunucu tarafında işlenir ve geçici olarak saklanır. &lt;em&gt;Dosyalarımı Sil&lt;/em&gt; düğmesini kullanın.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Gizlilik Politikası</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV, gizliliğinizi korumaya kararlıdır. Bu sayfa, verilerinizi nasıl işlediğimizi açıklar.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Dosya İşleme</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Yüklediğiniz dosyalar, sunucudaki geçici, oturum özel bir dizinde saklanır.&lt;/li&gt;&lt;li&gt;Geçici dosyalar yalnızca istenen dönüşümü gerçekleştirmek için kullanılır ve &lt;strong&gt;asla üçüncü taraflarla paylaşılmaz&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Geçici dosyalar en fazla 2 saat sonra otomatik olarak silinir.&lt;/li&gt;&lt;li&gt;Dönüştürücüdeki &lt;strong&gt;Dosyalarımı Sil&lt;/strong&gt; düğmesini kullanarak dosyalarınızı istediğiniz zaman anında silebilirsiniz.&lt;/li&gt;&lt;li&gt;Silme işleminden sonra yüklenen veya dönüştürülen dosyaların hiçbir kopyasını saklamıyoruz.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Çerezler</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Yalnızca CSRF koruması için gereken minimum çerezleri kullanıyoruz. Bu uygulama tarafından kişisel izleme çerezi ayarlanmamaktadır.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Günlükler</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standart sunucu erişim günlükleri güvenlik ve operasyonel amaçlarla saklanabilir. Bu günlükler IP adreslerini ve istek meta verilerini içerir, ancak yüklediğiniz dosyaların içeriğini içermez.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>İletişim</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Gizlilik sorguları için lütfen GitHub deposumuzdaki issue'yu açın.</value>
   </data>
 </root>

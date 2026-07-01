@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Atsižvelgti į laukelius kabutėse</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Neleidžia kabučių viduje esantiems skyrybos ženklams ir separatoriams būti konvertuotiems kaip tikri stulpelių lūžiai ar skaičiai.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konvertuoti eilučių pabaigą</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Pasirinktinis pakeitimas (palikite tuščią naudoti lokalės nustatymą)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Naudokite šiuos laukus tik tada, kai failas neatitinka pasirinktų lokalės nustatymų ir reikia rankiniu būdu perrašyti aptiktus skyrybos ženklus arba separatorius.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Šaltinio skyriklis</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Skirtukas&lt;/strong&gt; — Laukų skyrimo simbolis. Europos CSV failai paprastai naudoja &lt;code&gt;;&lt;/code&gt;, angliški — &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Dešimtainis skirtukas&lt;/strong&gt; — Dešimtainių skaičių simbolis. Vokiečių k.: &lt;code&gt;1.234,56&lt;/code&gt; → Anglų k.: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tūkstančių skirtukas&lt;/strong&gt; — Įjunkite tik jei faile yra formatuotų skaičių.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Kabutėmis pažymėti laukai&lt;/strong&gt; — Kabutėmis pažymėti laukai apsaugoti nuo pakeitimų.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Privatumas&lt;/strong&gt; — Failai apdorojami serveryje ir laikinai saugomi. Naudokite mygtuką &lt;em&gt;Ištrinti mano failus&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Privatumo politika</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV įsipareigoja saugoti jūsų privatumą. Šiame puslapyje aprašoma, kaip tvarkome jūsų duomenis.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Failų tvarkymas</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Jūsų įkelti failai saugomi laikinajame, sesijai skirtame serveriame kataloge.&lt;/li&gt;&lt;li&gt;Laikinieji failai naudojami tik prašomai konversijai atlikti ir &lt;strong&gt;niekada nėra dalijamasi su trečiosiomis šalimis&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Laikinieji failai automatiškai ištrinami po daugiausiai 2 valandų.&lt;/li&gt;&lt;li&gt;Galite inicijuoti skubų savo failų ištrynimą bet kuriuo metu naudodami keitiklio mygtuką &lt;strong&gt;Ištrinti mano failus&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Po ištrynimo nesaugome jokių jūsų įkeltų ar konvertuotų failų kopijų.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Slapukai</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Naudojame tik minimalius slapukus, reikalingus CSRF apsaugai. Ši programa nenustato jokių asmeninių sekimo slapukų.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Žurnalai</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Standartiniai serverio prieigos žurnalai gali būti saugomi saugumo ir eksploatavimo tikslais. Šiuose žurnaluose yra IP adresai ir užklausų metaduomenys, tačiau nėra jūsų įkeltų failų turinio.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Kontaktai</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Dėl privatumo klausimų atidarykite problemą mūsų GitHub saugykloje.</value>
   </data>
 </root>

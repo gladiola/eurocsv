@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Kunnioita lainattuja kenttiä</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Estää lainausmerkein ympäröityjen arvojen sisällä olevien erottimien ja separaattorien muuntamisen kuin ne olisivat todellisia sarakerajoja tai lukuja.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Muunna rivinpäätteet</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Mukautettu ohitus (jätä tyhjäksi alueen esiasetuksen käyttämiseksi)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Käytä näitä kenttiä vain, kun tiedosto ei vastaa valittuja alueesiasetuksia ja sinun täytyy ohittaa havaitut erottimet tai separaattorit manuaalisesti.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Lähdeerotin</value>
@@ -226,5 +232,35 @@
   </data>
   <data name="HowItWorksBody" xml:space="preserve">
     <value>&lt;p&gt;&lt;strong&gt;Erotin&lt;/strong&gt; — Kenttien erotinmerkki. Eurooppalaiset CSV-tiedostot käyttävät yleensä &lt;code&gt;;&lt;/code&gt;, englantilaiset &lt;code&gt;,&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Desimaalierotin&lt;/strong&gt; — Desimaalimerkki. Saksa: &lt;code&gt;1.234,56&lt;/code&gt; → Englanti: &lt;code&gt;1,234.56&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Tuhaterotinmerkki&lt;/strong&gt; — Ota käyttöön vain jos tiedosto sisältää muotoiltuja lukuja.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Lainausmerkkikentät&lt;/strong&gt; — Lainausmerkeissä olevat kentät on suojattu korvauksilta.&lt;/p&gt;&lt;p class=&quot;mb-0&quot;&gt;&lt;strong&gt;Tietosuoja&lt;/strong&gt; — Tiedostot käsitellään palvelimella ja tallennetaan väliaikaisesti. Käytä painiketta &lt;em&gt;Poista tiedostoni&lt;/em&gt;.&lt;/p&gt;</value>
+  </data>
+  <data name="PrivacyTitle" xml:space="preserve">
+    <value>Tietosuojakäytäntö</value>
+  </data>
+  <data name="PrivacyIntro" xml:space="preserve">
+    <value>EuroCSV on sitoutunut suojelemaan yksityisyyttäsi. Tällä sivulla kuvataan, miten käsittelemme tietojasi.</value>
+  </data>
+  <data name="PrivacySectionFileHandling" xml:space="preserve">
+    <value>Tiedostojen käsittely</value>
+  </data>
+  <data name="PrivacyFileHandlingItems" xml:space="preserve">
+    <value>&lt;li&gt;Lataamasi tiedostot tallennetaan väliaikaiseen, istuntokohtaiseen hakemistoon palvelimella.&lt;/li&gt;&lt;li&gt;Väliaikaisia tiedostoja käytetään vain pyydetyn muunnoksen suorittamiseen, eikä niitä &lt;strong&gt;koskaan jaeta kolmansille osapuolille&lt;/strong&gt;.&lt;/li&gt;&lt;li&gt;Väliaikaiset tiedostot poistetaan automaattisesti enintään 2 tunnin kuluttua.&lt;/li&gt;&lt;li&gt;Voit aloittaa tiedostojesi välittömän poistamisen milloin tahansa käyttämällä &lt;strong&gt;Poista tiedostoni&lt;/strong&gt; -painiketta muuntimessa.&lt;/li&gt;&lt;li&gt;Emme säilytä kopioita latatuista tai muunnetuista tiedostoistasi poistamisen jälkeen.&lt;/li&gt;</value>
+  </data>
+  <data name="PrivacySectionCookies" xml:space="preserve">
+    <value>Evästeet</value>
+  </data>
+  <data name="PrivacyCookiesBody" xml:space="preserve">
+    <value>Käytämme vain CSRF-suojaukseen tarvittavia minimaalisia evästeitä. Tämä sovellus ei aseta henkilökohtaisia seurantaevästeitä.</value>
+  </data>
+  <data name="PrivacySectionLogs" xml:space="preserve">
+    <value>Lokit</value>
+  </data>
+  <data name="PrivacyLogsBody" xml:space="preserve">
+    <value>Palvelimen vakiokäyttölokit voidaan säilyttää tietoturva- ja toimintasyistä. Nämä lokit sisältävät IP-osoitteet ja pyyntöjen metatiedot, mutta eivät ladattujen tiedostojen sisältöä.</value>
+  </data>
+  <data name="PrivacySectionContact" xml:space="preserve">
+    <value>Yhteystiedot</value>
+  </data>
+  <data name="PrivacyContactBody" xml:space="preserve">
+    <value>Tietosuojaa koskevissa tiedusteluissa avaa ongelma GitHub-arkistossamme.</value>
   </data>
 </root>
