@@ -84,6 +84,10 @@ namespace eurocsv.Services
             await using var fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None);
             await content.CopyToAsync(fs, ct);
 
+            _logger.LogInformation(
+                "TransformedFileSaved | SessionId={SessionId} | TempPath={TempPath}",
+                sessionId, filePath);
+
             return filePath;
         }
 
@@ -109,8 +113,17 @@ namespace eurocsv.Services
             var sessionDir = GetSessionDirectory(sessionId);
             if (Directory.Exists(sessionDir))
             {
+                // Log each file being removed so deletions are auditable.
+                foreach (var file in Directory.EnumerateFiles(sessionDir, "*", SearchOption.AllDirectories))
+                {
+                    _logger.LogInformation(
+                        "UserDeleteFile | SessionId={SessionId} | FilePath={FilePath}",
+                        sessionId, file);
+                }
                 Directory.Delete(sessionDir, recursive: true);
-                _logger.LogInformation("Cleaned up session {SessionId}", sessionId);
+                _logger.LogInformation(
+                    "UserDeleteCompleted | SessionId={SessionId} | DirectoryDeleted={Directory}",
+                    sessionId, sessionDir);
             }
         }
 
@@ -126,13 +139,23 @@ namespace eurocsv.Services
                     var created = Directory.GetCreationTimeUtc(dir);
                     if (created < cutoff)
                     {
+                        // Log each file being purged before deletion.
+                        foreach (var file in Directory.EnumerateFiles(dir, "*", SearchOption.AllDirectories))
+                        {
+                            _logger.LogInformation(
+                                "PurgeDeleteFile | SessionDir={SessionDir} | FilePath={FilePath} | CreatedUtc={CreatedUtc}",
+                                Path.GetFileName(dir), file, created);
+                        }
                         Directory.Delete(dir, recursive: true);
-                        _logger.LogInformation("Purged expired session directory: {Dir}", Path.GetFileName(dir));
+                        _logger.LogInformation(
+                            "PurgeDeleteSession | SessionDir={SessionDir} | CreatedUtc={CreatedUtc} | AgeHours={AgeHours}",
+                            Path.GetFileName(dir), created,
+                            (DateTime.UtcNow - created).TotalHours.ToString("F1"));
                     }
                 }
                 catch (Exception ex)
                 {
-                    _logger.LogWarning(ex, "Failed to purge session directory: {Dir}", dir);
+                    _logger.LogWarning(ex, "PurgeFailed | SessionDir={SessionDir}", Path.GetFileName(dir));
                 }
             }
         }
