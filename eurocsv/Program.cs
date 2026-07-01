@@ -108,10 +108,18 @@ var supportedCultures = new[]
     "lv-LV",
 };
 
-app.UseRequestLocalization(new RequestLocalizationOptions()
+var localizationOptions = new RequestLocalizationOptions()
     .SetDefaultCulture("de-DE")
     .AddSupportedCultures(supportedCultures)
-    .AddSupportedUICultures(supportedCultures));
+    .AddSupportedUICultures(supportedCultures);
+// Remove the Accept-Language header provider so the default culture (de-DE) is used
+// for first-time visitors instead of their browser's language preference.
+var providersToRemove = localizationOptions.RequestCultureProviders
+    .Where(p => p is AcceptLanguageHeaderRequestCultureProvider)
+    .ToList();
+foreach (var provider in providersToRemove)
+    localizationOptions.RequestCultureProviders.Remove(provider);
+app.UseRequestLocalization(localizationOptions);
 
 app.UseHttpsRedirection();
 

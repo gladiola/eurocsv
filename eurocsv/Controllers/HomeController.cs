@@ -26,7 +26,7 @@ public class HomeController : Controller
 
         var model = new ConversionSessionViewModel
         {
-            Options = new CsvConversionOptions { FromLocale = "de-DE", ToLocale = "en-US" },
+            Options = new CsvConversionOptions { FromLocale = "en-GB", ToLocale = "de-DE" },
             AvailableLocales = LocaleConvention.Presets
         };
         return View(model);
