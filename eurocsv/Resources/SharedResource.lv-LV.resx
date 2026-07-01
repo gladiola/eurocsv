@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Pārveidojiet CSV failus starp starptautiskajām formatēšanas konvencijām sekundēs.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Konvertēt CSV failu</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Augšupielādēt</value>
   </data>

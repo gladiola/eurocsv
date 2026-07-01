@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>CSVファイルを国際的な書式規則間で数秒で変換します。</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 CSVファイルを変換</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 アップロード</value>
   </data>

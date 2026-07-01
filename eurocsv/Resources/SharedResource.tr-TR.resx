@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>CSV dosyalarını saniyeler içinde uluslararası biçimlendirme kuralları arasında dönüştürün.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Bir CSV Dosyası Dönüştür</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Yükle</value>
   </data>

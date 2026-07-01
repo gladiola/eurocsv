@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Konvertuokite CSV failus tarp tarptautinių formatavimo konvencijų per kelias sekundes.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Konvertuoti CSV failą</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Įkelti</value>
   </data>

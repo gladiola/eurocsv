@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Konvertujte súbory CSV medzi medzinárodnými formátovacími konvenciami v priebehu sekúnd.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Konvertovať súbor CSV</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Nahrať</value>
   </data>

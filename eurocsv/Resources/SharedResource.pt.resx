@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Converta arquivos CSV entre diferentes convenções de formatação internacional em segundos.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Converter um arquivo CSV</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Enviar</value>
   </data>

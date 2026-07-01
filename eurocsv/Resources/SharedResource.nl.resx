@@ -74,9 +74,6 @@
   <data name="IndexTagline" xml:space="preserve">
     <value>Converteer CSV-bestanden tussen internationale opmaakconventies in seconden.</value>
   </data>
-  <data name="IndexConvertButton" xml:space="preserve">
-    <value>🔄 Een CSV-bestand converteren</value>
-  </data>
   <data name="IndexUploadTitle" xml:space="preserve">
     <value>📤 Uploaden</value>
   </data>
