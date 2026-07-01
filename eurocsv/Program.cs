@@ -68,7 +68,7 @@ var supportedCultures = new[]
 };
 
 app.UseRequestLocalization(new RequestLocalizationOptions()
-    .SetDefaultCulture("en-US")
+    .SetDefaultCulture("de-DE")
     .AddSupportedCultures(supportedCultures)
     .AddSupportedUICultures(supportedCultures));
 
