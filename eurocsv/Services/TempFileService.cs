@@ -48,8 +48,9 @@ namespace eurocsv.Services
         public TempFileService(ILogger<TempFileService> logger, IWebHostEnvironment env)
         {
             _logger = logger;
-            // Store temp files outside wwwroot so they are never served statically
-            _basePath = Path.Combine(Path.GetTempPath(), "eurocsv_sessions");
+            // Store temp files inside the app content root (owned by the service user)
+            // so that the process always has write permission, regardless of /tmp ownership.
+            _basePath = Path.Combine(env.ContentRootPath, "tmp_sessions");
             Directory.CreateDirectory(_basePath);
         }
 
