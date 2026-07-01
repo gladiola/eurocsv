@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Atsižvelgti į laukelius kabutėse</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Neleidžia kabučių viduje esantiems skyrybos ženklams ir separatoriams būti konvertuotiems kaip tikri stulpelių lūžiai ar skaičiai.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konvertuoti eilučių pabaigą</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Pasirinktinis pakeitimas (palikite tuščią naudoti lokalės nustatymą)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Naudokite šiuos laukus tik tada, kai failas neatitinka pasirinktų lokalės nustatymų ir reikia rankiniu būdu perrašyti aptiktus skyrybos ženklus arba separatorius.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Šaltinio skyriklis</value>

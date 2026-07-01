@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>遵守引号字段</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>防止引号值内的分隔符和分隔符被转换，就像它们是真实的列分隔符或数字一样。</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>转换行尾</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>自定义覆盖（留空以使用区域设置预设）</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>仅当文件与所选区域设置预设不匹配且您需要手动覆盖检测到的分隔符或分隔符时，才使用这些字段。</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>源分隔符</value>

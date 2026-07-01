@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Ievērot pēdiņās iekļautus laukus</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Novērš, ka pēdiņās iekļautu vērtību iekšienē esošie atdalītāji un separatori tiek konvertēti kā reālas kolonnu atdalīšanas vai skaitļi.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konvertēt rindu beigas</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Pielāgota ignorēšana (atstājiet tukšu, lai izmantotu iestatījumu priekšiestatījumu)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Izmantojiet šos laukus tikai tad, ja fails neatbilst izvēlētajiem iestatījumu priekšiestatījumiem un jums manuāli jāpārraksta konstatētie atdalītāji vai separatori.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Avota atdalītājs</value>

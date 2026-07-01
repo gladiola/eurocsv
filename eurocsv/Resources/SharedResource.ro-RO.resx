@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respectați câmpurile între ghilimele</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Împiedică ca delimitatorii și separatorii din interiorul valorilor între ghilimele să fie convertiți ca și cum ar fi separări reale de coloane sau numere.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Convertiți terminațiile de linie</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Înlocuire personalizată (lăsați necompletat pentru a folosi presetarea regională)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Utilizați aceste câmpuri numai când fișierul nu corespunde presetărilor regionale selectate și trebuie să înlocuiți manual delimitatorii sau separatorii detectați.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Delimitator sursă</value>

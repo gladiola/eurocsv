@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Kunnioita lainattuja kenttiä</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Estää lainausmerkein ympäröityjen arvojen sisällä olevien erottimien ja separaattorien muuntamisen kuin ne olisivat todellisia sarakerajoja tai lukuja.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Muunna rivinpäätteet</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Mukautettu ohitus (jätä tyhjäksi alueen esiasetuksen käyttämiseksi)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Käytä näitä kenttiä vain, kun tiedosto ei vastaa valittuja alueesiasetuksia ja sinun täytyy ohittaa havaitut erottimet tai separaattorit manuaalisesti.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Lähdeerotin</value>

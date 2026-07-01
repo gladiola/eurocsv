@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respecter les champs entre guillemets</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Empêche que les délimiteurs et séparateurs à l'intérieur des valeurs entre guillemets soient convertis comme s'ils étaient de vraies séparations de colonnes ou des nombres.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Convertir les fins de ligne</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Remplacement personnalisé (laisser vide pour utiliser le préréglage régional)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Utilisez ces champs uniquement lorsque le fichier ne correspond pas aux préréglages régionaux sélectionnés et que vous devez remplacer manuellement les délimiteurs ou séparateurs détectés.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Délimiteur source</value>

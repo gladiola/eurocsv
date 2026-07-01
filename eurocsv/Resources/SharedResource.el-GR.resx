@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Σεβασμός σε πεδία με εισαγωγικά</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Αποτρέπει τη μετατροπή διαχωριστικών και διαχωριστών μέσα σε τιμές με εισαγωγικά ως πραγματικές διαχωρίσεις στηλών ή αριθμοί.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Μετατροπή τέλους γραμμής</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Προσαρμοσμένη παράκαμψη (αφήστε κενό για χρήση προεπιλογής)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Χρησιμοποιήστε αυτά τα πεδία μόνο όταν το αρχείο δεν αντιστοιχεί στις επιλεγμένες προεπιλογές και χρειάζεται να παρακάμψετε χειροκίνητα τους εντοπισμένους διαχωριστές ή διαχωριστικά.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Οριοθέτης πηγής</value>

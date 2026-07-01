@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respektera citerade fält</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Förhindrar att avgränsare och separatorer inuti citerade värden konverteras som om de vore riktiga kolumnavgränsningar eller tal.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konvertera radslut</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Anpassad åsidosättning (lämna tomt för att använda regionförinställning)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Använd dessa fält endast när filen inte matchar de valda regionförinställningarna och du behöver åsidosätta de identifierade avgränsarna eller separatorerna manuellt.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Källavgränsare</value>

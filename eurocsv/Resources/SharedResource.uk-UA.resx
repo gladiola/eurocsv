@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Враховувати поля в лапках</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Запобігає перетворенню роздільників і сепараторів всередині значень у лапках як справжніх розривів стовпців або чисел.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Конвертувати закінчення рядків</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Нестандартне заміщення (залишіть порожнім для використання пресету)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Використовуйте ці поля лише тоді, коли файл не відповідає вибраним пресетам мовних стандартів і вам потрібно вручну замінити виявлені роздільники або сепаратори.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Вихідний роздільник</value>

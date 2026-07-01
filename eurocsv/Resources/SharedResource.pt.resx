@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respeitar campos entre aspas</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Evita que delimitadores e separadores dentro de valores entre aspas sejam convertidos como se fossem separações de colunas ou números reais.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Converter finais de linha</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Substituição personalizada (deixar em branco para usar o padrão da localidade)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Use estes campos apenas quando o arquivo não corresponder aos padrões regionais selecionados e você precisar substituir manualmente os delimitadores ou separadores detectados.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Delimitador origem</value>

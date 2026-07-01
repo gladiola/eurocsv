@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Зачитане на полета в кавички</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Предотвратява конвертирането на разделители и сепаратори вътре в стойности в кавички като истински разбивки на колони или числа.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Конвертиране на краищата на редовете</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Персонализирано заместване (оставете празно за предварителна настройка)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Използвайте тези полета само когато файлът не съответства на избраните регионални предварителни настройки и трябва ръчно да замените откритите разделители или сепаратори.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Изходен разделител</value>

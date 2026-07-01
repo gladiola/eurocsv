@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Обрабатывать цитируемые поля</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Предотвращает преобразование разделителей и сепараторов внутри значений в кавычках как настоящих разрывов столбцов или чисел.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Конвертировать окончания строк</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Пользовательское переопределение (оставьте пустым для использования предустановки)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Используйте эти поля только в том случае, если файл не соответствует выбранным предустановкам языка и вам нужно вручную переопределить обнаруженные разделители или сепараторы.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Разделитель источника</value>

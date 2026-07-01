@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Alıntılanan alanları dikkate al</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Tırnak içindeki değerlerdeki sınırlayıcıların ve ayırıcıların gerçek sütun sonları veya sayılar gibi dönüştürülmesini engeller.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Satır sonlarını dönüştür</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Özel geçersiz kılma (yerel ön ayarı kullanmak için boş bırakın)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Bu alanları yalnızca dosya seçili yerel ön ayarlarla eşleşmediğinde ve algılanan sınırlayıcıları veya ayırıcıları manuel olarak geçersiz kılmanız gerektiğinde kullanın.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Kaynak sınırlayıcı</value>

@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Anführungsfelder beachten</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Verhindert, dass Trennzeichen und Separatoren innerhalb von Anführungszeichen als echte Spaltentrennungen oder Zahlen behandelt werden.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Zeilenenden konvertieren</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Benutzerdefinierte Überschreibung (leer lassen für Gebietsschema-Voreinstellung)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Verwenden Sie diese Felder nur, wenn die Datei nicht den ausgewählten Gebietsschema-Voreinstellungen entspricht und Sie die erkannten Trennzeichen oder Separatoren manuell überschreiben müssen.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Von Trennzeichen</value>

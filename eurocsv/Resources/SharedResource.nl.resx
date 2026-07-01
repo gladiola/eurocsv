@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Geciteerde velden respecteren</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Voorkomt dat scheidingstekens en separatoren binnen geciteerde waarden worden geconverteerd alsof het echte kolomscheidingen of getallen zijn.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Regeleinden converteren</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Aangepaste overschrijving (leeg laten voor landinstellingen)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Gebruik deze velden alleen wanneer het bestand niet overeenkomt met de geselecteerde landinstellingen en u de gedetecteerde scheidingstekens of separatoren handmatig moet overschrijven.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Van scheidingsteken</value>

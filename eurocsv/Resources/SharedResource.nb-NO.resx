@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respekter siterte felter</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Hindrer at skilletegn og separatorer innenfor siterte verdier konverteres som om de var ekte kolonneinndelinger eller tall.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konverter linjeavslutninger</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Egendefinert overstyring (la stå tomt for å bruke lokasjonpreset)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Bruk disse feltene bare når filen ikke samsvarer med de valgte stedsforhåndsinnstillingene og du må overstyre de oppdagede skilletegnene eller separatorene manuelt.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Kildeskilletegn</value>

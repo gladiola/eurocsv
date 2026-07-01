@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Poštivanje polja u navodnicima</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Sprječava da se razdjelnici i separatori unutar navodnika konvertiraju kao da su stvarni prijelomi stupaca ili brojevi.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Pretvori završetke redaka</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Prilagođeno nadjačavanje (ostavite prazno za regionalnu pretpostavku)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Koristite ova polja samo kada datoteka ne odgovara odabranim regionalnim prepostavkama i trebate ručno zamijeniti otkrivene razdjelniki ili separatore.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Izvorni razdjelnik</value>

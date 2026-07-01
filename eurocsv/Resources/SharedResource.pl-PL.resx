@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respektuj pola w cudzysłowie</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Zapobiega konwertowaniu ograniczników i separatorów wewnątrz wartości w cudzysłowie tak, jakby były prawdziwymi podziałami kolumn lub liczbami.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konwertuj zakończenia wierszy</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Niestandardowe nadpisanie (pozostaw puste, aby użyć ustawień regionalnych)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Używaj tych pól tylko wtedy, gdy plik nie pasuje do wybranych ustawień regionalnych i musisz ręcznie nadpisać wykryte ograniczniki lub separatory.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Separator źródłowy</value>

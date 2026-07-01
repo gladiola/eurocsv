@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Idézett mezők tiszteletben tartása</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Megakadályozza, hogy az idézett értékeken belüli elválasztók és szeparátorok valódi oszloptörésként vagy számként kerüljenek konvertálásra.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Soremelések konvertálása</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Egyéni felülírás (hagyja üresen a területi előbeállítás használatához)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Ezeket a mezőket csak akkor használja, ha a fájl nem egyezik a kiválasztott területi előbeállításokkal, és manuálisan kell felülírnia a felismert elválasztókat vagy szeparátorokat.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Forrás elválasztó</value>

@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>引用符付きフィールドを考慮する</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>引用符内の区切り文字や分離記号が、実際の列区切りや数値として変換されないようにします。</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>行末を変換</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>カスタム上書き（ロケールプリセットを使用するには空のままにします）</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>ファイルが選択したロケールプリセットと一致せず、検出された区切り文字や分離記号を手動で上書きする必要がある場合にのみ、これらのフィールドを使用してください。</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>変換元区切り文字</value>

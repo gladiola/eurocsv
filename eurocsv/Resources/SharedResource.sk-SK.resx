@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Rešpektovať uvádzané polia</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Zabraňuje tomu, aby oddeľovače a separátory vnútri uvádzaných hodnôt boli konvertované, akoby išlo o skutočné konce stĺpcov alebo čísla.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Konvertovať konce riadkov</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Vlastné prepísanie (ponechajte prázdne pre použitie predvoľby oblasti)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Tieto polia použite len vtedy, keď súbor nezodpovedá vybraným predvolbám oblasti a musíte manuálne prepísať zistené oddeľovače alebo separátory.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Oddeľovač zdroj</value>

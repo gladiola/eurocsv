@@ -167,6 +167,9 @@
   <data name="ConvertHandleQualifiers" xml:space="preserve">
     <value>Respetar campos entre comillas</value>
   </data>
+  <data name="ConvertHandleQualifiersTooltip" xml:space="preserve">
+    <value>Evita que los delimitadores y separadores dentro de los valores entre comillas se conviertan como si fueran separaciones de columnas o números reales.</value>
+  </data>
   <data name="ConvertConvertLineEndings" xml:space="preserve">
     <value>Convertir finales de línea</value>
   </data>
@@ -181,6 +184,9 @@
   </data>
   <data name="ConvertCustomOverride" xml:space="preserve">
     <value>Anulación personalizada (dejar en blanco para usar el ajuste regional)</value>
+  </data>
+  <data name="ConvertCustomOverrideTooltip" xml:space="preserve">
+    <value>Use estos campos solo cuando el archivo no coincida con los ajustes regionales seleccionados y necesite anular manualmente los delimitadores o separadores detectados.</value>
   </data>
   <data name="ConvertFromDelimiter" xml:space="preserve">
     <value>Delimitador origen</value>
