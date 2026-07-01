@@ -10,6 +10,7 @@ namespace eurocsv.Tests.Localization
         private static IStringLocalizer<SharedResource> CreateLocalizer()
         {
             var services = new ServiceCollection();
+            services.AddLogging();
             services.AddLocalization(options => options.ResourcesPath = "Resources");
 
             return services
