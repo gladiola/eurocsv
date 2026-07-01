@@ -121,3 +121,83 @@ To run the automated tests:
 ```bash
 dotnet test --nologo
 ```
+
+## Deploying on Ubuntu with Nginx
+
+This section covers a production deployment on Ubuntu where nginx terminates TLS and reverse-proxies to Kestrel.
+
+### 1. Publish the application
+
+```bash
+dotnet publish eurocsv/eurocsv.csproj -c Release -o /var/www/eurocsv
+```
+
+### 2. Create a systemd service
+
+Create `/etc/systemd/system/eurocsv.service`:
+
+```ini
+[Unit]
+Description=EuroCSV ASP.NET Core application
+After=network.target
+
+[Service]
+WorkingDirectory=/var/www/eurocsv
+ExecStart=/usr/bin/dotnet /var/www/eurocsv/eurocsv.dll
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=ASPNETCORE_URLS=http://localhost:5006
+Environment=DOTNET_PRINT_TELEMETRY_MESSAGE=false
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Enable and start the service:
+
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now eurocsv
+```
+
+### 3. Configure nginx
+
+Create `/etc/nginx/sites-available/eurocsv` and enable it with a symlink to `sites-enabled`:
+
+```nginx
+server {
+    listen 80;
+    server_name example.com;
+    return 301 https://$host$request_uri;
+}
+
+server {
+    listen 443 ssl;
+    server_name example.com;
+
+    ssl_certificate     /etc/ssl/certs/example.com.crt;
+    ssl_certificate_key /etc/ssl/private/example.com.key;
+
+    location / {
+        proxy_pass         http://localhost:5006;
+        proxy_http_version 1.1;
+        proxy_set_header   Host              $host;
+        proxy_set_header   X-Real-IP         $remote_addr;
+        proxy_set_header   X-Forwarded-For   $proxy_add_x_forwarded_for;
+        proxy_set_header   X-Forwarded-Proto $scheme;
+        proxy_set_header   Upgrade           $http_upgrade;
+        proxy_set_header   Connection        keep-alive;
+        proxy_cache_bypass $http_upgrade;
+    }
+}
+```
+
+```bash
+sudo ln -s /etc/nginx/sites-available/eurocsv /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+> **Note:** The app calls `UseForwardedHeaders` before `UseHttpsRedirection` so it correctly reads the `X-Forwarded-Proto` header sent by nginx. Without this, Kestrel would see every request as plain HTTP and generate redirect loops.
