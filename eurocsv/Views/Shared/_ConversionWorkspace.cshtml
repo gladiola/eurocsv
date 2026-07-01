@@ -14,7 +14,7 @@
         {
             <div class="card border-success mb-4">
                 <div class="card-header bg-success text-white">
-                    <strong>✅ @L["ConvertCompleteTitle"]</strong>
+                    <strong>@L["ConvertCompleteTitle"]</strong>
                 </div>
                 <div class="card-body">
                     <dl class="row mb-3">
@@ -34,11 +34,11 @@
                     <div class="d-flex flex-wrap gap-2 mb-3">
                         <a asp-controller="Csv" asp-action="DownloadOriginal" asp-route-sessionId="@Model.SessionId"
                            class="btn btn-outline-secondary">
-                            📥 @L["ConvertDownloadOriginal"]
+                            @L["ConvertDownloadOriginal"]
                         </a>
                         <a asp-controller="Csv" asp-action="DownloadTransformed" asp-route-sessionId="@Model.SessionId"
                            class="btn btn-primary">
-                            📥 @L["ConvertDownloadConverted"]
+                            @L["ConvertDownloadConverted"]
                         </a>
                     </div>
 
@@ -51,7 +51,7 @@
                         <button type="submit" class="btn btn-outline-danger btn-sm"
                                 data-confirm="@L["ConvertDeleteConfirm"]"
                                 onclick="return confirm(this.getAttribute('data-confirm'))">
-                            🗑️ @L["ConvertDeleteFiles"]
+                            @L["ConvertDeleteFiles"]
                         </button>
                     </form>
                 </div>
@@ -113,7 +113,7 @@
                             <button class="btn btn-link collapsed p-0 text-dark fw-semibold text-decoration-none" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#advancedOptions"
                                     aria-expanded="false" aria-controls="advancedOptions">
-                                ⚙️ @L["ConvertOptions"]
+                                @L["ConvertOptions"]
                             </button>
                         </div>
                         <div class="collapse" id="advancedOptions">
@@ -215,7 +215,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary btn-lg">
-                        🔄 @L["ConvertNow"]
+                        @L["ConvertNow"]
                     </button>
                 </form>
             </div>
@@ -253,7 +253,7 @@
     <div class="col-lg-4">
         <div class="card border-info">
             <div class="card-header bg-info bg-opacity-10">
-                <strong>ℹ️ @L["HowItWorksTitle"]</strong>
+                <strong>@L["HowItWorksTitle"]</strong>
             </div>
             <div class="card-body small">
                 @Html.Raw(L["HowItWorksBody"].Value)
