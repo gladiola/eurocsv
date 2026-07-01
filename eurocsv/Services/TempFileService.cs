@@ -45,12 +45,11 @@ namespace eurocsv.Services
         private const string OriginalSubdir = "original";
         private const string TransformedSubdir = "transformed";
 
-        public TempFileService(ILogger<TempFileService> logger, IWebHostEnvironment env)
+        public TempFileService(ILogger<TempFileService> logger)
         {
             _logger = logger;
-            // Store temp files inside the app content root (owned by the service user)
-            // so that the process always has write permission, regardless of /tmp ownership.
-            _basePath = Path.Combine(env.ContentRootPath, "tmp_sessions");
+            // Store temp files in the OS temp directory under a dedicated app folder.
+            _basePath = "/tmp/eurocsv_sessions";
             Directory.CreateDirectory(_basePath);
         }
 
