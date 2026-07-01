@@ -34,6 +34,8 @@ namespace eurocsv.Controllers
         [RequestSizeLimit(50 * 1024 * 1024)]
         public async Task<IActionResult> Upload(IFormFile csvFile, CsvConversionOptions options)
         {
+            var traceId = HttpContext.TraceIdentifier;
+
             var model = new ConversionSessionViewModel
             {
                 Options = options,
@@ -42,60 +44,100 @@ namespace eurocsv.Controllers
                 ToConvention = LocaleConvention.FindByCode(options.ToLocale)
             };
 
+            // Log conversion settings at the start of each upload request.
+            _logger.LogInformation(
+                "ConversionRequested | TraceId={TraceId} | FromLocale={FromLocale} | ToLocale={ToLocale} | " +
+                "ConvertDelimiter={ConvertDelimiter} | ConvertDecimal={ConvertDecimal} | ConvertThousands={ConvertThousands} | " +
+                "HandleQualifiers={HandleQualifiers} | ConvertLineEndings={ConvertLineEndings} | OutputLineEnding={OutputLineEnding}",
+                traceId, SanitizeForLog(options.FromLocale), SanitizeForLog(options.ToLocale),
+                options.ConvertDelimiter, options.ConvertDecimalSeparator, options.ConvertThousandSeparator,
+                options.HandleTextQualifiers, options.ConvertLineEndings, SanitizeForLog(options.OutputLineEnding));
+
             if (csvFile == null || csvFile.Length == 0)
             {
+                _logger.LogWarning(
+                    "UploadRejected | TraceId={TraceId} | Reason=NoFileProvided",
+                    traceId);
                 model.ErrorMessage = "Please select a CSV file to upload.";
                 return RenderHomeIndex(model);
             }
 
             if (csvFile.Length > MaxFileSizeBytes)
             {
+                _logger.LogWarning(
+                    "UploadRejected | TraceId={TraceId} | Reason=FileTooLarge | FileSize={FileSize}",
+                    traceId, csvFile.Length);
                 model.ErrorMessage = $"File is too large. Maximum size is {MaxFileSizeBytes / (1024 * 1024)} MB.";
                 return RenderHomeIndex(model);
             }
 
             if (!ModelState.IsValid)
             {
+                _logger.LogWarning(
+                    "UploadRejected | TraceId={TraceId} | Reason=InvalidModelState",
+                    traceId);
                 model.ErrorMessage = "Invalid conversion options.";
                 return RenderHomeIndex(model);
             }
 
             if (model.FromConvention == null)
             {
+                _logger.LogWarning(
+                    "UploadRejected | TraceId={TraceId} | Reason=UnknownSourceLocale | Locale={Locale}",
+                    traceId, SanitizeForLog(options.FromLocale));
                 model.ErrorMessage = $"Unknown source locale: {options.FromLocale}";
                 return RenderHomeIndex(model);
             }
 
             if (model.ToConvention == null)
             {
+                _logger.LogWarning(
+                    "UploadRejected | TraceId={TraceId} | Reason=UnknownTargetLocale | Locale={Locale}",
+                    traceId, SanitizeForLog(options.ToLocale));
                 model.ErrorMessage = $"Unknown target locale: {options.ToLocale}";
                 return RenderHomeIndex(model);
             }
 
             try
             {
-                // Save original
+                // Save original — the service logs the temp file path.
                 var (sessionId, originalPath) = await _tempFileService.SaveUploadAsync(csvFile);
                 model.SessionId = sessionId;
                 model.OriginalFileName = csvFile.FileName;
                 model.OriginalFileSizeBytes = csvFile.Length;
 
+                _logger.LogInformation(
+                    "FileUploaded | TraceId={TraceId} | SessionId={SessionId} | OriginalFileName={FileName} | " +
+                    "FileSizeBytes={FileSize} | TempPath={TempPath}",
+                    traceId, sessionId, SanitizeForLog(csvFile.FileName), csvFile.Length, SanitizeForLog(originalPath));
+
                 // Transform
+                var started = DateTime.UtcNow;
                 await using var inputStream = System.IO.File.OpenRead(originalPath);
                 using var outputStream = _transformService.Transform(inputStream, options);
 
-                // Save transformed
+                // Save transformed — the service logs the output path.
                 var outputFileName = BuildOutputFileName(csvFile.FileName, options.ToLocale);
-                await _tempFileService.SaveTransformedAsync(sessionId, outputStream, outputFileName, HttpContext.RequestAborted);
+                var outputPath = await _tempFileService.SaveTransformedAsync(
+                    sessionId, outputStream, outputFileName, HttpContext.RequestAborted);
 
                 model.TransformedFileSizeBytes = outputStream.Length;
+                var elapsed = DateTime.UtcNow - started;
 
-                _logger.LogInformation("Converted CSV for session {SessionId}: {From} -> {To}", sessionId, options.FromLocale, options.ToLocale);
+                _logger.LogInformation(
+                    "ConversionSucceeded | TraceId={TraceId} | SessionId={SessionId} | " +
+                    "FromLocale={FromLocale} | ToLocale={ToLocale} | " +
+                    "InputBytes={InputBytes} | OutputBytes={OutputBytes} | ElapsedMs={ElapsedMs} | OutputPath={OutputPath}",
+                    traceId, sessionId, SanitizeForLog(options.FromLocale), SanitizeForLog(options.ToLocale),
+                    csvFile.Length, outputStream.Length, (long)elapsed.TotalMilliseconds, SanitizeForLog(outputPath));
+
                 return RenderHomeIndex(model);
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error converting CSV file");
+                _logger.LogError(ex,
+                    "ConversionFailed | TraceId={TraceId} | SessionId={SessionId} | Error={Error}",
+                    traceId, model.SessionId ?? "none", ex.Message);
                 model.ErrorMessage = "An error occurred while converting the file. Please check your settings and try again.";
                 return RenderHomeIndex(model);
             }
@@ -111,6 +153,10 @@ namespace eurocsv.Controllers
             if (path == null || !System.IO.File.Exists(path))
                 return NotFound("Original file not found. It may have been deleted.");
 
+            _logger.LogInformation(
+                "FileDownloaded | TraceId={TraceId} | SessionId={SessionId} | FileType=Original | Path={Path}",
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId), SanitizeForLog(path));
+
             var fileName = Path.GetFileName(path);
             return PhysicalFile(path, "text/csv", fileName);
         }
@@ -125,6 +171,10 @@ namespace eurocsv.Controllers
             if (path == null || !System.IO.File.Exists(path))
                 return NotFound("Transformed file not found. It may have been deleted.");
 
+            _logger.LogInformation(
+                "FileDownloaded | TraceId={TraceId} | SessionId={SessionId} | FileType=Transformed | Path={Path}",
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId), SanitizeForLog(path));
+
             var fileName = Path.GetFileName(path);
             return PhysicalFile(path, "text/csv", fileName);
         }
@@ -136,8 +186,15 @@ namespace eurocsv.Controllers
             if (!IsValidSessionId(sessionId))
                 return BadRequest("Invalid session.");
 
+            _logger.LogInformation(
+                "UserDeleteRequested | TraceId={TraceId} | SessionId={SessionId}",
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId));
+
             _tempFileService.CleanupSession(sessionId);
-            _logger.LogInformation("User initiated cleanup for session {SessionId}", sessionId);
+
+            _logger.LogInformation(
+                "UserDeleteCompleted | TraceId={TraceId} | SessionId={SessionId}",
+                HttpContext.TraceIdentifier, SanitizeForLog(sessionId));
 
             TempData["Message"] = "Your files have been securely deleted.";
             var homeUrl = Url.Action("Index", "Home") ?? "/";
@@ -159,5 +216,13 @@ namespace eurocsv.Controllers
             !string.IsNullOrEmpty(sessionId)
             && sessionId.Length == 32
             && sessionId.All(char.IsAsciiLetterOrDigit);
+
+        /// <summary>
+        /// Sanitizes a string for safe inclusion in log messages by replacing control
+        /// characters (CR, LF, TAB, etc.) that could be used for log-forging attacks.
+        /// </summary>
+        private static string SanitizeForLog(string? value) =>
+            string.IsNullOrEmpty(value) ? string.Empty
+                : value.Replace('\r', '_').Replace('\n', '_').Replace('\t', '_');
     }
 }

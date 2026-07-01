@@ -262,8 +262,7 @@
     </div>
 </div>
 
-<script>
-    function getSelectedOption(selectId) {
+<script nonce="@Context.Items["Nonce"]">
         const sel = document.getElementById(selectId);
         return sel ? sel.options[sel.selectedIndex] : null;
     }

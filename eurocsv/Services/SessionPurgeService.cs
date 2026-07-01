@@ -43,13 +43,16 @@ namespace eurocsv.Services
         {
             try
             {
-                _logger.LogDebug("SessionPurgeService: starting purge sweep.");
+                _logger.LogInformation(
+                    "PurgeSweepStarted | MaxAge={MaxAge} | CutoffUtc={CutoffUtc}",
+                    SessionMaxAge, DateTime.UtcNow - SessionMaxAge);
                 _tempFileService.PurgeExpiredSessions(SessionMaxAge);
+                _logger.LogInformation("PurgeSweepCompleted");
             }
             catch (Exception ex)
             {
                 // Log but do not let an exception bring down the background service.
-                _logger.LogError(ex, "SessionPurgeService: unhandled error during purge sweep.");
+                _logger.LogError(ex, "PurgeSweepError | UnhandledExceptionDuringPurgeSweep");
             }
         }
     }
