@@ -11,6 +11,7 @@ builder.Services.AddControllersWithViews()
 builder.Services.AddAntiforgery();
 builder.Services.AddScoped<ICsvTransformService, CsvTransformService>();
 builder.Services.AddSingleton<ITempFileService, TempFileService>();
+builder.Services.AddHostedService<SessionPurgeService>();
 
 // Configure upload size limit (50 MB)
 builder.Services.Configure<Microsoft.AspNetCore.Http.Features.FormOptions>(o =>
@@ -68,7 +69,7 @@ var supportedCultures = new[]
 };
 
 app.UseRequestLocalization(new RequestLocalizationOptions()
-    .SetDefaultCulture("en-US")
+    .SetDefaultCulture("de-DE")
     .AddSupportedCultures(supportedCultures)
     .AddSupportedUICultures(supportedCultures));
 
@@ -82,13 +83,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
-
-// Purge expired sessions on startup (older than 2 hours)
-using (var scope = app.Services.CreateScope())
-{
-    var tempFileService = scope.ServiceProvider.GetRequiredService<ITempFileService>();
-    tempFileService.PurgeExpiredSessions(TimeSpan.FromHours(2));
-}
 
 app.Run();
 
