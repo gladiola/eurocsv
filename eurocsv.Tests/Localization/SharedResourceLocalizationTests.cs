@@ -11,7 +11,7 @@ namespace eurocsv.Tests.Localization
         {
             var services = new ServiceCollection();
             services.AddLogging();
-            services.AddLocalization(options => options.ResourcesPath = "Resources");
+            services.AddLocalization();
 
             return services
                 .BuildServiceProvider()
