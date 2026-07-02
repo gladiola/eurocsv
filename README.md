@@ -201,3 +201,55 @@ sudo nginx -t && sudo systemctl reload nginx
 ```
 
 > **Note:** The app calls `UseForwardedHeaders` before `UseHttpsRedirection` so it correctly reads the `X-Forwarded-Proto` header sent by nginx. Without this, Kestrel would see every request as plain HTTP and generate redirect loops.
+
+### 4. Troubleshooting 502 Bad Gateway
+
+If nginx returns `502 Bad Gateway`, run through this checklist in order:
+
+1. **Confirm the app process is running**
+   - `sudo systemctl status eurocsv`
+   - If it restarts or crashes: `sudo journalctl -u eurocsv -n 200 --no-pager`
+
+2. **Verify publish output and service startup mode**
+   - If you published self-contained, make sure `ExecStart` points to the published app executable.
+   - Ensure `WorkingDirectory` matches the publish folder and files exist there.
+
+3. **Verify app bind port matches nginx upstream**
+   - Confirm `ASPNETCORE_URLS` in the service file (for example `http://localhost:5006`).
+   - Confirm nginx `proxy_pass` points to the same host/port.
+
+4. **Validate nginx config and active site**
+   - `sudo nginx -t`
+   - Ensure the intended site is linked in `sites-enabled`.
+   - Check for conflicting server blocks with the same `server_name`.
+
+5. **Test upstream directly from the host**
+   - Call the app directly on `localhost:<port>` to bypass nginx.
+   - If direct call fails, focus on app/service.
+   - If direct call works, focus on nginx/proxy settings.
+
+6. **Check nginx logs while reproducing**
+   - Review `/var/log/nginx/error.log` and access logs for the failing request.
+   - Look for errors like `connect() failed`, `upstream prematurely closed connection`, or timeout events.
+
+7. **Verify permissions and ownership**
+   - Ensure service user (for example `www-data`) can execute published files.
+   - Ensure required app/temp directories are readable/writable as needed.
+
+8. **Validate TLS and host routing**
+   - Confirm certificate/key paths are correct and readable.
+   - Confirm DNS/host header resolves to the `server_name` block you expect.
+
+9. **Re-check reverse-proxy headers and redirect behavior**
+   - Keep `X-Forwarded-Proto` and related headers in nginx.
+   - Check for HTTP↔HTTPS redirect loops.
+
+10. **Check timeouts and system resources**
+    - For slow startup, test with higher nginx proxy timeouts.
+    - Check for resource pressure/OOM (`dmesg`, journal, CPU/memory/disk).
+
+11. **Use a clean reload sequence after each change**
+    - `sudo systemctl daemon-reload` (if unit changed)
+    - `sudo systemctl restart eurocsv`
+    - `sudo systemctl reload nginx`
+    - Re-test immediately and re-check logs.
