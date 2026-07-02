@@ -18,11 +18,12 @@ public class HomeController : Controller
         // Log the start of a user session.  We use the request TraceIdentifier as the
         // correlation key for this session since there is no authentication.
         var traceId = HttpContext.TraceIdentifier;
+        var clientIp = SanitizeForLog(HttpContext.Connection.RemoteIpAddress?.ToString());
         var userAgent = SanitizeForLog(Request.Headers["User-Agent"].ToString());
         var language = SanitizeForLog(Request.Headers["Accept-Language"].ToString());
         _logger.LogInformation(
-            "SessionStart | TraceId={TraceId} | UserAgent={UserAgent} | AcceptLanguage={AcceptLanguage}",
-            traceId, userAgent, language);
+            "SessionStart | TraceId={TraceId} | ClientIp={ClientIp} | UserAgent={UserAgent} | AcceptLanguage={AcceptLanguage}",
+            traceId, clientIp, userAgent, language);
 
         var model = new ConversionSessionViewModel
         {
