@@ -12,15 +12,15 @@ Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
     .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
     .Enrich.FromLogContext()
-    .WriteTo.Console(
-        outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}")
-    .WriteTo.File(
+    .WriteTo.Async(writeTo => writeTo.Console(
+        outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}"))
+    .WriteTo.Async(writeTo => writeTo.File(
         path: Path.Combine("logs", "eurocsv-.log"),
         rollingInterval: RollingInterval.Hour,
         retainedFileCountLimit: 720,          // 30 days × 24 h/day
         outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} {Level:u3}] {Message:lj}{NewLine}{Exception}",
         shared: false,
-        flushToDiskInterval: TimeSpan.FromSeconds(5))
+        flushToDiskInterval: TimeSpan.FromSeconds(5)))
     .CreateBootstrapLogger();
 
 var builder = WebApplication.CreateBuilder(args);
@@ -34,15 +34,15 @@ builder.Host.UseSerilog((ctx, services, loggerConfig) =>
         .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
         .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Warning)
         .Enrich.FromLogContext()
-        .WriteTo.Console(
-            outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}")
-        .WriteTo.File(
+        .WriteTo.Async(writeTo => writeTo.Console(
+            outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss} {Level:u3}] {Message:lj}{NewLine}{Exception}"))
+        .WriteTo.Async(writeTo => writeTo.File(
             path: Path.Combine("logs", "eurocsv-.log"),
             rollingInterval: RollingInterval.Hour,
             retainedFileCountLimit: 720,
             outputTemplate: "[{Timestamp:yyyy-MM-dd HH:mm:ss.fff} {Level:u3}] {Message:lj}{NewLine}{Exception}",
             shared: false,
-            flushToDiskInterval: TimeSpan.FromSeconds(5)));
+            flushToDiskInterval: TimeSpan.FromSeconds(5))));
 
 // Add services
 builder.Services.AddLocalization();
@@ -159,4 +159,3 @@ app.Run();
 
 // Make Program accessible for testing
 public partial class Program { }
-
