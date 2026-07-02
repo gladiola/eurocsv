@@ -133,7 +133,7 @@ app.UseMiddleware<NonceMiddleware>();
 app.UseSerilogRequestLogging(options =>
 {
     options.MessageTemplate =
-        "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms | TraceId={TraceId}";
+        "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms | TraceId={TraceId} | ClientIp={ClientIp}";
     options.GetLevel = (ctx, elapsed, ex) =>
         ex != null || ctx.Response.StatusCode >= 500
             ? LogEventLevel.Error
@@ -141,6 +141,7 @@ app.UseSerilogRequestLogging(options =>
     options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
     {
         diagnosticContext.Set("TraceId", httpContext.TraceIdentifier);
+        diagnosticContext.Set("ClientIp", httpContext.Connection.RemoteIpAddress?.ToString() ?? string.Empty);
     };
 });
 
